@@ -18,7 +18,7 @@ const Card: React.FC = () => {
       </div>
       <div className="px-2 py-4">
         <span className="inline-block bg-gray-200 hover:bg-gray-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          #art
+          #arttttt
         </span>
         <span className="inline-block bg-gray-200 hover:bg-gray-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
           #contemporary

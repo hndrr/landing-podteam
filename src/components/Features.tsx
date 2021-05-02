@@ -1,6 +1,6 @@
 const Features: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20">
       <div className="container max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold tracking-tight text-center">
           Our Features
@@ -9,7 +9,7 @@ const Features: React.FC = () => {
           Check out our list of awesome features below.
         </p>
         <div className="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
-          <div className="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 sm:rounded-xl">
+          <div className="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden  sm:rounded-xl">
             <div className="p-3 text-white bg-blue-500 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Features: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
             <div className="p-3 text-white bg-blue-500 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const Features: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
             <div className="p-3 text-white bg-blue-500 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ const Features: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
             <div className="p-3 text-white bg-blue-500 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const Features: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
             <div className="p-3 text-white bg-blue-500 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +142,7 @@ const Features: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
             <div className="p-3 text-white bg-blue-500 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

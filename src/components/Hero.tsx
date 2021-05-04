@@ -2,7 +2,7 @@ const Hero: React.FC = () => {
   return (
     <div className="px-2 py-8 md:px-0">
       <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
-        <div className="flex flex-wrap items-center sm:-mx-3">
+        <div className="flex flex-wrap items-center flex-col-reverse sm:-mx-3  md:flex-row">
           <div className="w-full md:w-1/2 md:px-3">
             <div className="w-full pb-6 mt-20 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:mx-auto lg:pr-0 md:pb-0">
               <h1 className="text-xl font-extrabold tracking-tight text-gray-900 sm:text-xl md:text-xl lg:text-xl xl:text-xl">

@@ -1,6 +1,6 @@
 const Authors: React.FC = () => {
   return (
-    <section className="py-20">
+    <section id="member" className="py-20">
       <div className="container max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold tracking-tight text-center">
           POD Team Members

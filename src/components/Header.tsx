@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 const Header: React.FC = () => {
   return (
     <section className="w-full px-6 antialiased">
@@ -29,24 +31,36 @@ const Header: React.FC = () => {
                   >
                     Home
                   </a>
-                  <a
-                    href="#_"
+                  <Link
                     className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    activeClass="active"
+                    to="member"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
                   >
-                    Features
-                  </a>
-                  <a
-                    href="#_"
+                    Member
+                  </Link>
+                  <Link
                     className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    activeClass="active"
+                    to="faq"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
                   >
-                    Blog
-                  </a>
-                  <a
-                    href="#_"
+                    Faq
+                  </Link>
+                  <Link
                     className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
                   >
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

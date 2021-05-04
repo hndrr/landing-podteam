@@ -11,15 +11,18 @@ const Authors: React.FC = () => {
           <div className="items-center justify-center w-full mt-4 mb-4 lg:flex">
             <div className="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0 lg:px-8">
               <div className="flex items-center justify-center">
-                <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                <a
+                  href="https://kboyflutteruniv.com/"
+                  className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
+                >
                   <img
-                    src="https://pbs.twimg.com/profile_images/1356931586919256064/faJCeS52_400x400.jpg"
+                    src="https://pbs.twimg.com/profile_images/1303007901649256448/FzV_BaS5_400x400.jpg"
                     className="object-cover w-full h-full"
                   />
-                </div>
+                </a>
                 <div className="flex flex-col items-start justify-center">
-                  <h4 className="font-bold text-gray-800">hndr</h4>
-                  <p className="text-gray-600">PM / UX</p>
+                  <h4 className="font-bold text-gray-800">Flutter大学</h4>
+                  <p className="text-gray-600">Community</p>
                 </div>
               </div>
               <blockquote className="mt-8 text-lg text-gray-500">
@@ -104,18 +107,15 @@ const Authors: React.FC = () => {
             </div>
             <div className="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:border-gray-900">
               <div className="flex items-center justify-center">
-                <a
-                  href="https://kboyflutteruniv.com/"
-                  className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full"
-                >
+                <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
                   <img
-                    src="https://pbs.twimg.com/profile_images/1303007901649256448/FzV_BaS5_400x400.jpg"
+                    src="https://pbs.twimg.com/profile_images/1356931586919256064/faJCeS52_400x400.jpg"
                     className="object-cover w-full h-full"
                   />
-                </a>
+                </div>
                 <div className="flex flex-col items-start justify-center">
-                  <h4 className="font-bold text-gray-800">Flutter大学</h4>
-                  <p className="text-gray-600">Community</p>
+                  <h4 className="font-bold text-gray-800">hndr</h4>
+                  <p className="text-gray-600">PM / UX</p>
                 </div>
               </div>
               <blockquote className="mt-8 text-lg text-gray-500">

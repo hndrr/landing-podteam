@@ -1,6 +1,6 @@
 const Header: React.FC = () => {
   return (
-    <section className="w-full px-6 pb-12 antialiased">
+    <section className="w-full px-6 antialiased">
       <div className="mx-auto max-w-7xl">
         <nav
           className="relative z-50 h-24 select-none"
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
           <div className="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium md:overflow-visible lg:justify-center sm:px-4 md:px-2">
             <div className="flex items-center justify-start w-1/4 h-full pr-4">
               <a href="#_" className="inline-block py-4 md:py-0">
-                <span className="p-1 text-xl font-black leading-none text-gray-900">
+                <span className="p-1 text-4xl font-black leading-none text-gray-900">
                   <span>POD</span>
                 </span>
               </a>

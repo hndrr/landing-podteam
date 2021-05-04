@@ -20,8 +20,8 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
     <>
       <Header />
       <Hero />
-      <Features />
       <Authors />
+      <Features />
       <Faq />
       <Footer />
     </>

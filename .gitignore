@@ -19,6 +19,7 @@ package-lock.json
 # misc
 .DS_Store
 *.pem
+*.code-workspace
 
 # debug
 npm-debug.log*

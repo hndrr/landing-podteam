@@ -10,7 +10,7 @@ const IconZenn: React.FC<Props> = (props) => {
     >
       <span className="sr-only">Zenn</span>
       <svg
-        className="w-5 h-5"
+        className="w-4 h-4"
         fill="currentColor"
         viewBox="0 0 24 24"
         aria-hidden="true"

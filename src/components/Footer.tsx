@@ -1,10 +1,6 @@
 import IconTwitter from "./svg/IconTwitter";
 import IconGithub from "./svg/IconGithub";
 
-type Props = {
-  url: string;
-};
-
 const Footer: React.FC<Props> = (props) => {
   return (
     <section id="contact" className="text-gray-700 body-font">

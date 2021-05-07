@@ -14,7 +14,7 @@ type Props = {
 };
 
 const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
-  const numbers = [1, 2, 3];
+  // const numbers = [1, 2, 3];
   // const refContents = useRef<HTMLDivElement>();
 
   // const scrollToContents = useCallback(() => {

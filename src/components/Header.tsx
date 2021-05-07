@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   return (
-    <section className="w-full px-6 antialiased">
+    <section id="header" className="w-full px-6 antialiased">
       <div className="mx-auto max-w-7xl">
         <nav className="relative z-50 h-16 select-none">
           <div
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
               "md:overflow-visible"
             }
           >
-            <div className="flex items-center justify-start w-1/4 h-full pr-4">
+            <div className="fixed">
               <a href="#_" className="inline-block py-4 md:py-0">
                 <span className="p-1 text-4xl font-black leading-none text-gray-900">
                   <span>POD</span>
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             </div>
             <div
               className={
-                "top-0 left-0 items-start w-full h-full text-sm md:items-center md:w-3/4 lg:text-base md:bg-transparent md:p-0 md:relative md:flex" +
+                "fixed top-100px right-0 mr-4 items-start w-64 h-full text-sm md:items-center md:w-3/4 md:top-0 md:mr-0 lg:text-base md:bg-transparent md:p-0 md:relative md:flex" +
                 (navbarOpen ? " flex" : " hidden")
               }
             >
@@ -34,12 +34,17 @@ const Header: React.FC = () => {
                     "flex flex-col items-start justify-center w-full space-x-6 text-center md:w-2/3 md:mt-0 md:flex-row md:items-center"
                   }
                 >
-                  <a
-                    href="#_"
+                  <Link
                     className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                    activeClass="active"
+                    to="header"
+                    offset={-40}
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
                   >
                     Home
-                  </a>
+                  </Link>
                   <Link
                     className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                     activeClass="active"
@@ -75,7 +80,7 @@ const Header: React.FC = () => {
             </div>
 
             <div
-              className="absolute right-0 flex flex-col items-center justify-center w-10 h-10 bg-white rounded cursor-pointer md:hidden hover:bg-gray-100"
+              className="fixed right-0 mr-4 flex flex-col items-center justify-center w-10 h-10 bg-white rounded cursor-pointer md:hidden hover:bg-gray-100"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <svg
@@ -84,9 +89,9 @@ const Header: React.FC = () => {
                 }
                 x-show="!showMenu"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 x-cloak=""
@@ -105,9 +110,9 @@ const Header: React.FC = () => {
                 x-cloak=""
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
               </svg>

@@ -31,7 +31,7 @@ const Header: React.FC = () => {
               <div className="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
                 <div
                   className={
-                    "flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center"
+                    "flex flex-col items-start justify-center w-full space-x-6 text-center md:w-2/3 md:mt-0 md:flex-row md:items-center"
                   }
                 >
                   <a
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
             </div>
 
             <div
-              className="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100"
+              className="absolute right-0 flex flex-col items-center justify-center w-10 h-10 bg-white rounded cursor-pointer md:hidden hover:bg-gray-100"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <svg

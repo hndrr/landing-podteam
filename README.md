@@ -12,7 +12,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Vercel https://nextjs-ts-blog.vercel.app/
+Vercel https://podteam.vercel.app/
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 

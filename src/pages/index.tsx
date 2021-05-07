@@ -2,6 +2,8 @@ import { NextComponentType, NextPageContext } from "next";
 import styled from "@emotion/styled";
 import tw from "twin.macro";
 import Header from "../components/Header";
+import Nav from "../components/Nav";
+
 import Hero from "../components/Hero";
 import Cards from "../components/Cards";
 import Authors from "../components/Authors";
@@ -27,6 +29,7 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
 
   return (
     <>
+      <Nav />
       <Header />
       <Hero />
       <Authors />

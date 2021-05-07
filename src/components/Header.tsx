@@ -64,6 +64,7 @@ const Header: React.FC = () => {
                 </div>
               </div>
             </div>
+
             <div className="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100">
               <svg
                 className="w-6 h-6 text-gray-700"

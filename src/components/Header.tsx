@@ -10,32 +10,38 @@ const Header: React.FC = () => {
         <nav className="relative z-50 h-16 select-none">
           <div
             className={
-              "container relative flex flex-wrap items-center justify-between h-24 mx-auto font-medium lg:justify-center sm:px-4 md:px-2" +
+              "container relative flex flex-wrap items-center justify-between h-24 font-medium lg:justify-center sm:px-4 md:px-2" +
               (navbarOpen ? "" : " overflow-hidden") +
               "md:overflow-visible"
             }
           >
-            <div className="fixed">
-              <a href="#_" className="inline-block py-4 md:py-0">
-                <span className="p-1 text-4xl font-black leading-none text-gray-900">
-                  <span>POD</span>
-                </span>
-              </a>
-            </div>
+            <Link
+              className="fixed md:static inline-block py-4 md:py-0"
+              activeClass="active"
+              to="header"
+              offset={-40}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <span className="p-1 text-4xl font-black leading-none text-gray-900">
+                <span>POD</span>
+              </span>
+            </Link>
             <div
               className={
-                "fixed top-100px right-0 mr-4 items-start w-64 h-full text-sm md:items-center md:w-3/4 md:top-0 md:mr-0 lg:text-base md:bg-transparent md:p-0 md:relative md:flex" +
+                "fixed top-100px right-0 mr-4 items-start w-32 h-full text-sm md:items-center md:w-3/4 md:top-0 md:mr-0 lg:text-base md:bg-transparent md:p-0 md:relative md:flex" +
                 (navbarOpen ? " flex" : " hidden")
               }
             >
-              <div className="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+              <div className="flex-col w-full h-auto overflow-hidden justify-center rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
                 <div
                   className={
                     "flex flex-col items-start justify-center w-full space-x-6 text-center md:w-2/3 md:mt-0 md:flex-row md:items-center"
                   }
                 >
                   <Link
-                    className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 text-2xl md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="header"
                     offset={-40}
@@ -46,7 +52,7 @@ const Header: React.FC = () => {
                     Home
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="member"
                     spy={true}
@@ -56,7 +62,7 @@ const Header: React.FC = () => {
                     Member
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="faq"
                     spy={true}
@@ -66,7 +72,7 @@ const Header: React.FC = () => {
                     Faq
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="contact"
                     spy={true}

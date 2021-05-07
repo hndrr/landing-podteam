@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-wrap items-center flex-col-reverse sm:-mx-3  md:flex-row">
           <div className="w-full md:w-1/2 md:px-3">
             <div className="w-full pb-6 mt-4  space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:mx-auto lg:pr-0 md:pb-0 md:mt-20">
-              <h1 className="text-xl font-extrabold tracking-tight text-gray-900 sm:text-xl md:text-xl lg:text-xl xl:text-xl">
+              <h1 className="text-2xl font-extrabold tracking-tight text-gray-900">
                 <span className="block">
                   PODはポッドキャストの購読や端末内の音楽を再生することができるアプリです。
                 </span>

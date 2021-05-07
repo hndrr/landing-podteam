@@ -37,9 +37,9 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 mt-20">
-            <div className="w-full h-auto overflow-hidden rounded-md sm:rounded-xl">
+            <div className="w-full h-auto rounded-md sm:rounded-xl">
               <img
-                className="rounded-lg mx-auto"
+                className="rounded-lg mx-auto shadow-lg"
                 src="/assets/animation_300.gif"
               />
             </div>

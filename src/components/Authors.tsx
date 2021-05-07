@@ -6,7 +6,7 @@ const Authors: React.FC = () => {
           POD Team Members
         </h2>
         <div className="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
             <a
               href="https://twitter.com/R24oka"
               className="w-20 h-20 overflow-hidden bg-gray-200 rounded-full"
@@ -23,7 +23,7 @@ const Authors: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
             <a
               className="w-20 h-20 overflow-hidden bg-gray-200 rounded-full"
               href="https://twitter.com/forelgoog"
@@ -40,7 +40,7 @@ const Authors: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
             <a
               href="https://twitter.com/tokkuu"
               className="w-20 h-20 overflow-hidden bg-gray-200 rounded-full"
@@ -57,7 +57,7 @@ const Authors: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
             <div className="w-20 h-20 overflow-hidden bg-gray-200 rounded-full">
               <img
                 src="https://pbs.twimg.com/profile_images/1369254753562103815/77AB6E8W_400x400.jpg"
@@ -73,7 +73,7 @@ const Authors: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 sm:rounded-xl">
+          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
             <a
               href="https://twitter.com/hndrr"
               className="w-20 h-20 overflow-hidden bg-gray-200 rounded-full"
@@ -91,7 +91,7 @@ const Authors: React.FC = () => {
               要件定義、UI/UXデザイン・実装などを担当
             </p>
           </div>
-          <div className="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden  sm:rounded-xl">
+          <div className="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden rounded-lg shadow-lg bg-gray-100">
             <a
               href="https://kboyflutteruniv.com/"
               className="w-20 h-20 overflow-hidden bg-gray-200 rounded-full"

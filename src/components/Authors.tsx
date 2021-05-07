@@ -1,3 +1,10 @@
+import React from "react";
+import IconGithub from "./svg/IconGithub";
+import IconQiita from "./svg/IconQiita";
+import IconTwitter from "./svg/IconTwitter";
+import IconZenn from "./svg/IconZenn";
+import IconYoutube from "./svg/IconYoutube";
+
 const Authors: React.FC = () => {
   return (
     <section id="member" className="py-20">
@@ -17,6 +24,11 @@ const Authors: React.FC = () => {
               />
             </a>
             <h4 className="text-xl font-bold text-gray-900">Rにしおか</h4>
+            <span className="inline-flex justify-center items-center space-x-5 sm:m-auto">
+              <IconTwitter url={"R24oka"} />
+              <IconGithub url={"RN24Nishioka"} />
+              <IconQiita url={"RN24"} />
+            </span>
             <p className="text-base text-center text-gray-700">Engineer</p>
             <p className="text-base text-center text-gray-700">
               ログイン機能、機能改善、リリースなどを担当
@@ -34,6 +46,10 @@ const Authors: React.FC = () => {
               />
             </a>
             <h4 className="text-xl font-bold text-gray-900">ポテセン</h4>
+            <span className="inline-flex justify-center items-center space-x-5 sm:m-auto">
+              <IconTwitter url={"forelgoog"} />
+              <IconGithub url={"hideaki10"} />
+            </span>
             <p className="text-base text-center text-gray-700">Engineer</p>
             <p className="text-base text-center text-gray-700">
               podcast機能、環境構築などを担当
@@ -51,6 +67,11 @@ const Authors: React.FC = () => {
               />
             </a>
             <h4 className="text-xl font-bold text-gray-900">とっく</h4>
+            <span className="inline-flex justify-center items-center space-x-5 sm:m-auto">
+              <IconTwitter url={"tokkuu"} />
+              <IconGithub url={"tokku5552"} />
+              <IconQiita url={"tokkun5552"} />
+            </span>
             <p className="text-base text-center text-gray-700">Engineer</p>
             <p className="text-base text-center text-gray-700">
               Android音楽再生機能、リファクタなどを担当
@@ -65,6 +86,9 @@ const Authors: React.FC = () => {
               />
             </div>
             <h4 className="text-xl font-bold text-gray-900">コップ時計</h4>
+            <span className="inline-flex justify-center items-center space-x-5 sm:m-auto">
+              <IconGithub url={"#"} />
+            </span>
             <p className="text-base text-center text-gray-700">
               College student / Engineer
             </p>
@@ -84,6 +108,12 @@ const Authors: React.FC = () => {
               />
             </a>
             <h4 className="text-xl font-bold text-gray-900">hndr</h4>
+            <span className="inline-flex justify-center items-center space-x-5 sm:m-auto">
+              <IconTwitter url={"hndrr"} />
+              <IconGithub url={"hndrr"} />
+              <IconZenn url={"hndr"} />
+              <IconQiita url={"hndr"} />
+            </span>
             <p className="text-base text-center text-gray-700">
               PM / UX Engineer
             </p>
@@ -104,10 +134,16 @@ const Authors: React.FC = () => {
             <h4 className="text-xl font-bold text-gray-900">
               KBOYのFlutter大学
             </h4>
+            <span className="inline-flex justify-center items-center space-x-5 sm:m-auto">
+              <IconYoutube url={"UCReuARgZI-BFjioA8KBpjsw/"} />
+              <IconTwitter url={"kboyflutteruniv"} />
+              <IconZenn url={"kboy/books/ca6a9c93fd23f3"} />
+              <IconQiita url={"organizations/kboy_flutter_univ"} />
+            </span>
             <p className="text-base text-center text-gray-700">
               <a
                 className="text-indigo-600"
-                href="https://twitter.com/kboyflutteruniv"
+                href="https://twitter.com/kboy_silvergym"
               >
                 KBOY@kboy_silvergym
               </a>

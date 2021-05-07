@@ -14,28 +14,34 @@ const Hero: React.FC = () => {
                 </span>
               </h1>
               <p className="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl"></p>
-              <div className="flex w-full justify-center md:justify-start lg:pb-0 fade-in">
+              <div className="flex w-full justify-around md:justify-start lg:pb-0 fade-in">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.musicapp.pod&hl=ja&gl=JP"
                   className="flex items-center px-6 py-3 mb-3 rounded-md"
                 >
-                  <img src="playstore.svg" className="h-12 bounce-top-icons" />
+                  <img
+                    src="/assets/playstore.svg"
+                    className="h-12 bounce-top-icons"
+                  />
                 </a>
                 <a
                   href="https://apps.apple.com/jp/app/pod/id1559338636"
                   className="flex items-center px-6 py-3 mb-3 rounded-md "
                 >
                   <img
-                    src="appstore.svg"
+                    src="/assets/appstore.svg"
                     className="h-12 pr-4 bounce-top-icons"
                   />
                 </a>
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 mt-20">
             <div className="w-full h-auto overflow-hidden rounded-md sm:rounded-xl">
-              <img className="mx-auto" src="animation_300.gif" />
+              <img
+                className="rounded-lg mx-auto"
+                src="/assets/animation_300.gif"
+              />
             </div>
           </div>
         </div>

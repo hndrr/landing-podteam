@@ -25,7 +25,7 @@ const authors = [
     avatarUrl: "https://avatars.githubusercontent.com/u/69064290?v=4",
     twitter: "tokkuu",
     github: "tokku5552",
-    // zenn: "",
+    zenn: "tokku5552",
     qiita: "tokkun5552",
     role: "Engineer",
     text: "Android音楽再生機能、リファクタなどを担当",

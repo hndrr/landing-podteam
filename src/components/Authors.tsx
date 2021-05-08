@@ -4,16 +4,91 @@ import IconQiita from "./svg/IconQiita";
 import IconTwitter from "./svg/IconTwitter";
 import IconZenn from "./svg/IconZenn";
 import IconYoutube from "./svg/IconYoutube";
+import Author from "./Author";
 
 const Authors: React.FC = () => {
+  const authors = [
+    {
+      authorName: "Rにしおか",
+      avatarUrl:
+        "https://pbs.twimg.com/profile_images/1306340269034336262/Gua2ip5u_400x400.jpg",
+      twitter: "R24oka",
+      github: "RN24Nishioka",
+      qiita: "RN24",
+      role: "Engineer",
+      text: "ログイン機能、機能改善、リリースなどを担当",
+    },
+    {
+      authorName: "ポテセン",
+      avatarUrl:
+        "https://pbs.twimg.com/profile_images/1231486072309207040/HxEzaw0e_400x400.jpg",
+      twitter: "forelgoog",
+      github: "hideaki10",
+      // zenn: "",
+      // qiita: "",
+      role: "Engineer",
+      text: "podcast機能、環境構築などを担当",
+    },
+    {
+      authorName: "とっく",
+      avatarUrl: "https://avatars.githubusercontent.com/u/69064290?v=4",
+      twitter: "tokkuu",
+      github: "tokku5552",
+      // zenn: "",
+      qiita: "tokkun5552",
+      role: "Engineer",
+      text: "Android音楽再生機能、リファクタなどを担当",
+    },
+    {
+      authorName: "コップ時計",
+      avatarUrl:
+        "https://pbs.twimg.com/profile_images/1369254753562103815/77AB6E8W_400x400.jpg",
+      // twitter: "",
+      github: "",
+      // zenn: "",
+      // qiita: "",
+      role: "College student / Engineer",
+      text: "ログイン機能、プライバシーポリシーなどを担当",
+    },
+    {
+      authorName: "hndr",
+      avatarUrl: "https://avatars.githubusercontent.com/u/53109993?v=4",
+      twitter: "hndrr",
+      github: "hndrr",
+      zenn: "hndr",
+      qiita: "hndr",
+      role: "PM / UX Engineer",
+      text: "要件定義、UI/UXデザイン・実装などを担当",
+    },
+    {
+      authorName: "KBOYのFlutter大学",
+      avatarUrl:
+        "https://pbs.twimg.com/profile_images/1303007901649256448/FzV_BaS5_400x400.jpg",
+      url: "https://kboyflutteruniv.com/",
+      youtube: "UCReuARgZI-BFjioA8KBpjsw/",
+      twitter: "kboyflutteruniv",
+      zenn: "kboy/books/ca6a9c93fd23f3",
+      qiita: "organizations/kboy_flutter_univ",
+      role: "Engineer",
+      text:
+        "が運営するFlutterアプリ開発を学ぶオンラインコミュニティ内で開発されています",
+    },
+  ];
+
+  const Authorlists = authors.map((author, index) => (
+    <Author key={index} author={author} />
+  ));
+
   return (
     <section id="member" className="py-20">
       <div className="container max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold tracking-tight text-center">
           POD Team Members
         </h2>
+
         <div className="grid grid-cols-4 gap-12 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
-          <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
+          {Authorlists}
+          {/* <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
             <a
               href="https://twitter.com/R24oka"
               className="w-20 h-20 overflow-hidden rounded-full"
@@ -34,7 +109,6 @@ const Authors: React.FC = () => {
               ログイン機能、機能改善、リリースなどを担当
             </p>
           </div>
-
           <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
             <a
               className="w-20 h-20 overflow-hidden rounded-full border-2 border-gray-50"
@@ -120,7 +194,7 @@ const Authors: React.FC = () => {
             <p className="text-base text-center text-gray-700">
               要件定義、UI/UXデザイン・実装などを担当
             </p>
-          </div>
+          </div> 
           <div className="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden rounded-lg shadow-lg bg-gray-100">
             <a
               href="https://kboyflutteruniv.com/"
@@ -149,7 +223,7 @@ const Authors: React.FC = () => {
               </a>
               が運営するFlutterアプリ開発を学ぶオンラインコミュニティ内で開発されています
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

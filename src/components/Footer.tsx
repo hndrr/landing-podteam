@@ -1,3 +1,4 @@
+import React from "react";
 import IconTwitter from "./svg/IconTwitter";
 import IconGithub from "./svg/IconGithub";
 

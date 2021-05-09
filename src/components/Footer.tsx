@@ -1,10 +1,13 @@
 import React from "react";
 import IconTwitter from "./svg/IconTwitter";
 import IconGithub from "./svg/IconGithub";
+import IconPlayStore from "./svg/IconPlaystore";
+import IconAppStore from "./svg/IconAppstore";
 
 const Footer: React.FC = () => {
   return (
     <section id="contact" className="text-gray-700 body-font">
+      <h2 className="text-5xl font-bold tracking-tight text-center">Contact</h2>
       <div className="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
         <a
           href="#_"
@@ -15,7 +18,9 @@ const Footer: React.FC = () => {
         <p className="mt-4 text-sm text-gray-900 sm:ml-4 sm:pl-4 sm:border-l sm:border-black sm:mt-0">
           © 2021 POD Team.
         </p>
-        <span className="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+        <span className="inline-flex justify-center items-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+          <IconPlayStore url={"com.musicapp.pod"} />
+          <IconAppStore url={"app/pod/id1559338636"} />
           <IconTwitter url={"podteam2525"} />
           <IconGithub url={"#"} />
         </span>

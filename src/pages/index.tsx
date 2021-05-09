@@ -5,7 +5,6 @@ import tw from "twin.macro";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Authors from "../components/Authors";
-import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import AppImages from "../components/AppImages";
 // import { useCallback, useRef } from "react";
@@ -32,7 +31,6 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
       <Hero />
       <AppImages />
       <Authors />
-      {/* <Faq /> */}
       <Footer />
     </>
   );

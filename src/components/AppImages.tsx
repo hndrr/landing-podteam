@@ -14,7 +14,10 @@ const AppImages: React.FC = () => {
   return (
     <>
       <section className="py-20">
-        <div id="android" className=" max-w-6xl mx-auto text-center sm:px-8">
+        <div
+          id="android"
+          className=" max-w-6xl mx-auto text-center px-8 lg:px-0"
+        >
           <h2 className="text-5xl font-bold tracking-tight text-center">
             Android App
           </h2>
@@ -25,7 +28,7 @@ const AppImages: React.FC = () => {
         </div>
       </section>
       <section className="py-20">
-        <div id="ios" className=" max-w-6xl mx-auto text-center sm:px-8">
+        <div id="ios" className=" max-w-6xl mx-auto text-center px-8 lg:px-0">
           <h2 className="text-5xl font-bold tracking-tight text-center">
             iOS App
           </h2>

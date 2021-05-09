@@ -34,7 +34,7 @@ const Author: React.FC<Props> = (props) => {
       <h4 className="text-xl font-bold text-gray-900">
         {props.author.authorName}
       </h4>
-      <span className="inline-flex justify-center items-center space-x-5 sm:m-auto">
+      <span className="inline-flex justify-center items-center space-x-5 sm:m-auto overflow-y-hidden">
         {props.author.youtube && <IconYoutube url={props.author.youtube} />}
         {props.author.twitter && <IconTwitter url={props.author.twitter} />}
         {props.author.github && <IconGithub url={props.author.github} />}

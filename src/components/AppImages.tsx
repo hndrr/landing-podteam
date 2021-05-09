@@ -1,6 +1,7 @@
 import React from "react";
 import { androidSrc, iosSrc } from "../array/app_src";
 import AppImage from "./AppImage";
+// import Slider from "./slider";
 
 const AppImages: React.FC = () => {
   const AndroidImagelist = androidSrc.map((cardImage, index) => (
@@ -18,6 +19,7 @@ const AppImages: React.FC = () => {
             Android App
           </h2>
           <div className="grid gap-8 mt-6 grid-cols-2 lg:grid-cols-4">
+            {/* <Slider imageList={androidSrc} /> */}
             {AndroidImagelist}
           </div>
         </div>
@@ -28,6 +30,7 @@ const AppImages: React.FC = () => {
             iOS App
           </h2>
           <div className="grid gap-8 mt-6 grid-cols-2 lg:grid-cols-4">
+            {/* <Slider imageList={iosSrc} /> */}
             {iOSImagelist}
           </div>
         </div>

@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                   }
                 >
                   <Link
-                    className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 text-2xl md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="header"
                     offset={-40}
@@ -52,7 +52,27 @@ const Header: React.FC = () => {
                     Home
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    activeClass="active"
+                    to="android"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    Android
+                  </Link>
+                  <Link
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    activeClass="active"
+                    to="ios"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    iOS
+                  </Link>
+                  <Link
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="member"
                     spy={true}
@@ -61,18 +81,24 @@ const Header: React.FC = () => {
                   >
                     Member
                   </Link>
-                  <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                  {/* <Link
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="faq"
                     spy={true}
                     smooth={true}
                     duration={1000}
                   >
-                    Faq
-                  </Link>
+                    Android
+                  </Link> */}
+                  {/* <a
+                    href="https://flutter-univ-music-app.web.app/"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                  >
+                    Privacy policy
+                  </a> */}
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                     activeClass="active"
                     to="contact"
                     spy={true}

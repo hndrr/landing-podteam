@@ -1,11 +1,15 @@
 import React from "react";
+import { androidSrc, iosSrc } from "../array/app_src";
 import AppImage from "./AppImage";
 
 const AppImages: React.FC = () => {
-  const cardImageList = [0, 1, 2, 3];
-  const CardImageList = cardImageList.map((cardImage, index) => (
-    <AppImage key={index} />
+  const AndroidImagelist = androidSrc.map((cardImage, index) => (
+    <AppImage key={index} cardImage={cardImage} />
   ));
+  const iOSImagelist = iosSrc.map((cardImage, index) => (
+    <AppImage key={index} cardImage={cardImage} />
+  ));
+
   return (
     <>
       <section className="py-10">
@@ -14,7 +18,7 @@ const AppImages: React.FC = () => {
             Android App
           </h2>
           <div className="grid gap-8 mt-6 grid-cols-2 lg:grid-cols-4">
-            {CardImageList}
+            {AndroidImagelist}
           </div>
         </div>
       </section>
@@ -24,7 +28,7 @@ const AppImages: React.FC = () => {
             iOS App
           </h2>
           <div className="grid gap-8 mt-6 grid-cols-2 lg:grid-cols-4">
-            {CardImageList}
+            {iOSImagelist}
           </div>
         </div>
       </section>

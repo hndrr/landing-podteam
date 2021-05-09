@@ -7,7 +7,8 @@ export const iosSrc = [
 
 export const androidSrc = [
   { name: "android top", src: "android600top.jpg" },
-  { name: "android list", src: "ios600list.png" },
+  { name: "android list", src: "android600list.jpg" },
   { name: "android modal", src: "android600modal.jpg" },
-  { name: "android detail", src: "ios600detail.png" },
+  { name: "android detail", src: "android600detail.jpg" },
+  { name: "android setting", src: "android600setting.jpg" },
 ];

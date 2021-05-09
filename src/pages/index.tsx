@@ -7,7 +7,7 @@ import Hero from "../components/Hero";
 import Authors from "../components/Authors";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
-import CardImages from "../components/CardImages";
+import AppImages from "../components/AppImages";
 // import { useCallback, useRef } from "react";
 
 type Props = {
@@ -30,9 +30,9 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
     <>
       <Header />
       <Hero />
-      <CardImages />
+      <AppImages />
       <Authors />
-      <Faq />
+      {/* <Faq /> */}
       <Footer />
     </>
   );

@@ -1,3 +1,4 @@
+import React from "react";
 import { NextComponentType, NextPageContext } from "next";
 import styled from "@emotion/styled";
 import tw from "twin.macro";
@@ -6,6 +7,7 @@ import Hero from "../components/Hero";
 import Authors from "../components/Authors";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
+import CardImages from "../components/CardImages";
 // import { useCallback, useRef } from "react";
 
 type Props = {
@@ -28,6 +30,7 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
     <>
       <Header />
       <Hero />
+      <CardImages />
       <Authors />
       <Faq />
       <Footer />

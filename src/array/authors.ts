@@ -60,7 +60,7 @@ const authors = [
     twitter: "kboyflutteruniv",
     zenn: "kboy/books/ca6a9c93fd23f3",
     qiita: "organizations/kboy_flutter_univ",
-    role: "Engineer Community",
+    role: "Community",
     text:
       "が運営するFlutterアプリ開発を学ぶオンラインコミュニティ内で開発されています",
   },

@@ -21,7 +21,7 @@ type Props = {
 
 const Author: React.FC<Props> = (props) => {
   return (
-    <div className="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 rounded-lg shadow-lg bg-gray-100">
+    <div className="flex flex-col items-center justify-between col-span-4 px-8 py-8 space-y-3 rounded-lg shadow-lg bg-gray-100">
       <a
         href={`https://twitter.com/${props.author.twitter}`}
         className="w-20 h-20 overflow-hidden rounded-full border-2 border-gray-50"

@@ -2,8 +2,22 @@ import React from "react";
 import authors from "../array/authors";
 import Author from "./Author";
 
+type Props = {
+  author: {
+    authorName: string;
+    avatarUrl: string;
+    youtube?: string;
+    twitter?: string;
+    github?: string;
+    zenn?: string;
+    qiita?: string;
+    role: string;
+    text: string;
+  };
+};
+
 const Authors: React.FC = () => {
-  const Authorlists = authors.map((author, index) => (
+  const Authorlists = authors.map((author, index: React.Key) => (
     <Author key={index} author={author} />
   ));
 

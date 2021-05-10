@@ -2,6 +2,7 @@ import React from "react";
 import IconGithub from "./svg/IconGithub";
 import IconQiita from "./svg/IconQiita";
 import IconTwitter from "./svg/IconTwitter";
+import IconWeb from "./svg/IconWeb";
 import IconYoutube from "./svg/IconYoutube";
 import IconZenn from "./svg/IconZenn";
 
@@ -9,6 +10,7 @@ type Props = {
   author: {
     authorName: string;
     avatarUrl: string;
+    website?: string;
     youtube?: string;
     twitter?: string;
     github?: string;
@@ -23,7 +25,13 @@ const Author: React.FC<Props> = (props) => {
   return (
     <div className="flex flex-col items-center justify-between col-span-4 px-8 py-8 space-y-3 rounded-lg shadow-lg bg-gray-100">
       <a
-        href={`https://twitter.com/${props.author.twitter}`}
+        href={
+          props.author.website
+            ? `https://${props.author.website}`
+            : props.author.twitter
+            ? `https://twitter.com/${props.author.twitter}`
+            : "#"
+        }
         className="w-20 h-20 overflow-hidden rounded-full border-2 border-gray-50"
       >
         <img
@@ -35,6 +43,7 @@ const Author: React.FC<Props> = (props) => {
         {props.author.authorName}
       </h4>
       <span className="inline-flex justify-center items-center space-x-5 sm:m-auto overflow-y-hidden">
+        {props.author.website && <IconWeb url={props.author.website} />}
         {props.author.youtube && <IconYoutube url={props.author.youtube} />}
         {props.author.twitter && <IconTwitter url={props.author.twitter} />}
         {props.author.github && <IconGithub url={props.author.github} />}

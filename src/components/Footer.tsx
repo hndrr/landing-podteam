@@ -6,9 +6,11 @@ import IconAppStore from "./svg/IconAppstore";
 
 const Footer: React.FC = () => {
   return (
-    <section id="contact" className="text-gray-700 body-font">
-      <h2 className="text-5xl font-bold tracking-tight text-center">Contact</h2>
-      <div className="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+    <section id="contact" className="body-font text-gray-700">
+      <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
+        Contact
+      </h2>
+      <div className=" container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
         <a
           href="#_"
           className="text-xl font-black leading-none text-gray-900 select-none logo"

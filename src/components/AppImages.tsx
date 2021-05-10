@@ -15,7 +15,7 @@ const AppImages: React.FC = () => {
     <>
       <section id="android" className="py-20">
         <div className=" max-w-6xl mx-auto text-center pl-8 lg:px-0">
-          <h2 className="text-5xl font-bold tracking-tight text-center">
+          <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
             Android App
           </h2>
           {/* <div className="grid gap-8 mt-6 grid-cols-2 lg:grid-cols-4">
@@ -28,7 +28,7 @@ const AppImages: React.FC = () => {
       </section>
       <section id="ios" className="py-20">
         <div className="max-w-6xl mx-auto text-center pl-8 lg:px-0">
-          <h2 className="text-5xl font-bold tracking-tight text-center">
+          <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
             iOS App
           </h2>
           {/* <div className="grid gap-8 mt-6 grid-cols-2 lg:grid-cols-4">

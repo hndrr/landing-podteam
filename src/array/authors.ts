@@ -23,6 +23,7 @@ const authors = [
   {
     authorName: "とっく",
     avatarUrl: "https://avatars.githubusercontent.com/u/69064290?v=4",
+    website: "tokku-engineer.tech/",
     twitter: "tokkuu",
     github: "tokku5552",
     zenn: "tokku5552",
@@ -55,7 +56,7 @@ const authors = [
     authorName: "KBOYのFlutter大学",
     avatarUrl:
       "https://pbs.twimg.com/profile_images/1303007901649256448/FzV_BaS5_400x400.jpg",
-    url: "https://kboyflutteruniv.com/",
+    website: "kboyflutteruniv.com/",
     youtube: "UCReuARgZI-BFjioA8KBpjsw/",
     twitter: "kboyflutteruniv",
     zenn: "kboy/books/ca6a9c93fd23f3",

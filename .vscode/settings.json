@@ -1,7 +1,17 @@
-{
-    "editor.codeActionsOnSave": null,
+{   
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["html", "javascriptreact", "typescriptreact"],
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "stylelint.enable": true,
+    "tailwindCSS.includeLanguages": {
+        "typescriptreact": "html"
+    },
     "[javascript]": {
         "editor.formatOnSave": true
     },

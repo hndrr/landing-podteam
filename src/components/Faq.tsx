@@ -1,21 +1,21 @@
 const Faq: React.FC = () => {
   return (
-    <section id="faq" className="py-24">
+    <section id="faq" className="py-20">
       <div className="px-8 mx-auto max-w-7xl lg:px-16">
-        <h2 className="mb-4 text-xl font-bold md:text-3xl">
+        <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
           Frequently Asked Questions
         </h2>
         <div className="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16">
           <div>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              What is Tails
+              PODとはどういったアプリですか
             </h5>
             <p>
               Tails is a drag and drop page builder built on Top of TailwindCSS.
               You can drop components to create a page that you can export.
             </p>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              Can I try it for Free?
+              お金はかかりますか
             </h5>
             <p>
               Absolutely, you can try out tails for free; however, if you wish
@@ -23,7 +23,7 @@ const Faq: React.FC = () => {
               upgrade your account.
             </p>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              Where do I go to upgrade my account?
+              利用方法はどうなっていますか
             </h5>
             <p>
               You can upgrade your account by visiting{" "}
@@ -44,7 +44,7 @@ const Faq: React.FC = () => {
               .
             </p>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              How long will I have access to Tails
+              iOS版とandroid版の違いはなんですか
             </h5>
             <p>
               You will have unlimited access to all your pre-built pages;
@@ -58,7 +58,7 @@ const Faq: React.FC = () => {
           </div>
           <div>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              How do I implement into my project
+              どのようにして開発が行われていますか
             </h5>
             <p>
               Implementation in your project is very simple. You can use the
@@ -66,14 +66,14 @@ const Faq: React.FC = () => {
               HTML into your own page.
             </p>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              What is the license on the pages?
+              PODを紹介したいのですが連絡はどうすればよいですか
             </h5>
             <p>
               You have unlimited use to the templates used in Tails; however,
               you cannot re-use the templates to sell for others to use.
             </p>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              Can I cancel my account if I not longer need it?
+              PODの開発に参加したいのですがどうすればよいですか
             </h5>
             <p>
               Of course, you can feel free to cancel your account at anytime,
@@ -81,7 +81,7 @@ const Faq: React.FC = () => {
               you're ready.
             </p>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
-              What if I need help with my project?
+              バグ報告や改善要望をおくりたいです
             </h5>
             <p>
               If you need assistance implementing the templates into your

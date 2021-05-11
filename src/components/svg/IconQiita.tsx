@@ -6,7 +6,7 @@ const IconQiita: React.FC<Props> = (props) => {
   return (
     <a
       href={`https://qiita.com/${props.url}`}
-      className="text-gray-900 hover:text-gray-200"
+      className="text-gray-900 hover:text-gray-200 h-5 -mt-10"
     >
       <span className="sr-only">Qiita</span>
       <svg

@@ -39,7 +39,7 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
 };
 
 const Anchor = styled.a`
-  ${tw`font-mono text-sm hover:bg-blue-200`};
+  ${tw`font-mono text-sm hover:bg-blue-200`}
 `;
 
 export default HomePage;

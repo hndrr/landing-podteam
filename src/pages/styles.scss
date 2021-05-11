@@ -3,7 +3,7 @@
 
 body {
   margin: 16px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .btn-blue {
@@ -21,7 +21,77 @@ body {
 }
 
 .top-100px {
- top: 100px;
+  top: 100px;
 }
+
+.android {
+  border-radius: 1.4em;
+  border: solid 4px #333;
+  img{
+    border-radius: 1.4em;
+  }
+}
+
+.ios {
+  position: relative;
+  border-radius: 1.4em;
+  border: solid 4px #333;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+    background-image: url(/assets/notch.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+  }
+  img{
+    border-radius: 1.4em;
+  }
+}
+
+// $notch-color: #222;
+// $corner-size: 7;
+
+// .notch {
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   width: 100px;
+//   height: 42px;
+//   background-color: $notch-color;
+//   border-radius: 0 0 28px 28px;
+//   transform: translateX(-50%);
+
+//   &::before,
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: -$corner-size * 1px;
+//     width: $corner-size * 2px;
+//     height: $corner-size * 1px;
+//     background-size: 50% 100%;
+//     background-repeat: no-repeat;
+//     background-image: radial-gradient(
+//       circle at 0 100%,
+//       transparent $corner-size - 1px,
+//       $notch-color $corner-size * 1px
+//     );
+//   }
+
+//   &::after {
+//     left: 100%;
+//     margin-right: corner-sizepx;
+//     background-image: radial-gradient(
+//       circle at 100% 100%,
+//       transparent $corner-size - 1px,
+//       $notch-color $corner-size * 1px
+//     );
+//   }
+// }
 
 @tailwind utilities;

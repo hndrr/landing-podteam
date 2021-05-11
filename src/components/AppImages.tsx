@@ -14,7 +14,7 @@ const AppImages: React.FC = () => {
   return (
     <>
       <section id="android" className="py-20 -mx-4">
-        <div className=" max-w-6xl mx-auto text-center px-0">
+        <div className=" max-w-6xl mx-auto text-center lg:px-0">
           <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
             Android App
           </h2>

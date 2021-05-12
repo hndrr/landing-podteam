@@ -12,6 +12,9 @@ type Props = {
 };
 
 const Slider: React.FC<Props> = (props) => {
+  const isXl = useMediaQuery({
+    query: "(min-width: 1280px)",
+  });
   const isLg = useMediaQuery({
     query: "(min-width: 1024px)",
   });
@@ -19,7 +22,12 @@ const Slider: React.FC<Props> = (props) => {
     query: "(min-width: 640px)",
   });
   const imageSlider = props.imageList.map((cardImage, index) => (
-    <SwiperSlide key={index} className="img-fluid">
+    <SwiperSlide
+      key={index}
+      className={`img-fluid ${
+        cardImage.name.match(/ios/i) ? "ios" : "android"
+      }`}
+    >
       <AppImage cardImage={cardImage} />
     </SwiperSlide>
   ));
@@ -27,8 +35,8 @@ const Slider: React.FC<Props> = (props) => {
   return (
     <Swiper
       spaceBetween={32}
-      slidesOffsetBefore={isSm ? 48 : 16}
-      slidesOffsetAfter={isSm ? 48 : 16}
+      slidesOffsetBefore={isXl ? 0 : isSm ? 48 : 16}
+      slidesOffsetAfter={isXl ? 0 : isSm ? 48 : 16}
       slidesPerView={isLg && props.imageList.length > 4 ? 4.5 : isLg ? 4 : 2.5}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}

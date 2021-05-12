@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import IconGithub from "./svg/IconGithub";
 import IconQiita from "./svg/IconQiita";
 import IconTwitter from "./svg/IconTwitter";
@@ -22,6 +23,10 @@ type Props = {
 };
 
 const Author: React.FC<Props> = (props) => {
+  const isMd = useMediaQuery({
+    query: "(min-width: 768px)",
+  });
+
   return (
     <div className="flex flex-col items-center justify-between col-span-4 px-8 py-8 space-y-3 rounded-lg shadow-lg bg-gray-100">
       <a
@@ -48,8 +53,15 @@ const Author: React.FC<Props> = (props) => {
         {props.author.twitter && <IconTwitter url={props.author.twitter} />}
         {props.author.github && <IconGithub url={props.author.github} />}
         {props.author.zenn && <IconZenn url={props.author.zenn} />}
-        {props.author.qiita && <IconQiita url={props.author.qiita} />}
+        {(isMd || !props.author.website) && props.author.qiita && (
+          <IconQiita url={props.author.qiita} />
+        )}
       </span>
+      {!isMd && props.author.website && props.author.qiita && (
+        <span className="inline-flex justify-center items-center h-6 overflow-y-hidden">
+          <IconQiita url={props.author.qiita} />
+        </span>
+      )}
       <p className="text-base text-center text-gray-700">{props.author.role}</p>
       <p className="text-base text-center text-gray-700">
         {props.author.authorName === "KBOYのFlutter大学" && (

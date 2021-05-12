@@ -10,6 +10,14 @@ const Footer: React.FC = () => {
       <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
         Contact
       </h2>
+      <div className="mt-10 text-center">
+        <a
+          href="https://docs.google.com/forms/d/1T0lbgXf5TArjAgMSSyaXNijW3JZ3wvLEJEV3ADhfEBc/viewform?usp=sf_link"
+          className="text-indigo-600 underline"
+        >
+          お問い合わせ・不具合報告
+        </a>
+      </div>
       <div className=" container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
         <a
           href="#_"

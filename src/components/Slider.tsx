@@ -29,7 +29,7 @@ const Slider: React.FC<Props> = (props) => {
       spaceBetween={32}
       slidesOffsetBefore={isSm ? 48 : 16}
       slidesOffsetAfter={isSm ? 48 : 16}
-      slidesPerView={isLg && props.imageList.length > 4 ? 4.3 : isLg ? 4 : 2.3}
+      slidesPerView={isLg && props.imageList.length > 4 ? 4.5 : isLg ? 4 : 2.5}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >

@@ -5,13 +5,16 @@ const Faq: React.FC = () => {
         <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
           Frequently Asked Questions
         </h2>
-        <div className="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16">
+        <div className="grid grid-cols-1 gap-0 text-gray-700 md:grid-cols-2 md:gap-16">
           <div>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
               PODとはどんなアプリですか
             </h5>
             <p>
-              Podcastと音楽を再生することができるアプリです。※音楽再生は現在Android版のみ対応
+              Podcastと音楽を再生することができるアプリです。
+              <br />
+              ※音楽再生は現在Android版のみ対応
+              <br />
               Podcast購読についてはログインIDが共通であればiOS/Androidで共有されます。
               将来的にはタッチホイールでのシークや倍速再生、同時再生などの機能実現を目指しています。
             </p>
@@ -29,6 +32,7 @@ const Faq: React.FC = () => {
             <p>
               まずメールアドレスまたはgoogleアカウント（iOS版ではApple
               IDも可能）で登録をお願いします。
+              <br />
               その後、目的のポッドキャストを検索して購読する流れとなります。
               またandroid版では本体に入っている音楽再生をすることができます。
             </p>
@@ -46,8 +50,10 @@ const Faq: React.FC = () => {
             </h5>
             <p>
               Flutter大学のコミュニティ内でGithubを使った週1のMTGによるアジャイル開発です。
+              <br />
               Google制のFlutterというクロスプラットフォーム開発フレームワークで作られています。
               ログイン機能、ポッドキャスト購読はFirebaseを利用しています。
+              <br />
               基本的にiOS/androidを1つのコードで作成されていますが、
               音楽再生については共通で実装が行えるライブラリがないためAndroid先行で対応中です。
             </p>
@@ -72,7 +78,7 @@ const Faq: React.FC = () => {
             <p>
               <a
                 href="https://docs.google.com/forms/d/1T0lbgXf5TArjAgMSSyaXNijW3JZ3wvLEJEV3ADhfEBc/viewform?usp=sf_link"
-                className="text-indigo-500 underline"
+                className="text-indigo-600 underline"
               >
                 お問い合わせ・不具合報告
               </a>

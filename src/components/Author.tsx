@@ -1,6 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import IconGithub from "./svg/IconGithub";
+import IconInstgaram from "./svg/IconInstagram";
 import IconQiita from "./svg/IconQiita";
 import IconTwitter from "./svg/IconTwitter";
 import IconWeb from "./svg/IconWeb";
@@ -14,6 +15,7 @@ type Props = {
     website?: string;
     youtube?: string;
     twitter?: string;
+    instagram?: string;
     github?: string;
     zenn?: string;
     qiita?: string;
@@ -51,25 +53,29 @@ const Author: React.FC<Props> = (props) => {
         {props.author.website && <IconWeb url={props.author.website} />}
         {props.author.youtube && <IconYoutube url={props.author.youtube} />}
         {props.author.twitter && <IconTwitter url={props.author.twitter} />}
+        {props.author.instagram && (
+          <IconInstgaram url={props.author.instagram} />
+        )}
         {props.author.github && <IconGithub url={props.author.github} />}
         {props.author.zenn && <IconZenn url={props.author.zenn} />}
-        {(isMd || !props.author.website) && props.author.qiita && (
-          <IconQiita url={props.author.qiita} />
-        )}
+        {(isMd || !props.author.website) &&
+          !props.author.instagram &&
+          props.author.qiita && <IconQiita url={props.author.qiita} />}
       </span>
-      {!isMd && props.author.website && props.author.qiita && (
-        <span className="inline-flex justify-center items-center h-6 overflow-y-hidden">
-          <IconQiita url={props.author.qiita} />
-        </span>
-      )}
+      {(props.author.instagram || (!isMd && props.author.website)) &&
+        props.author.qiita && (
+          <span className="inline-flex justify-center items-center h-6 overflow-y-hidden">
+            <IconQiita url={props.author.qiita} />
+          </span>
+        )}
       <p className="text-base text-center text-gray-700">{props.author.role}</p>
       <p className="text-base text-center text-gray-700">
         {props.author.authorName === "KBOYのFlutter大学" && (
           <a
             className="text-indigo-600"
-            href="https://twitter.com/kboy_silvergym"
+            href={`https://twitter.com/${props.author.twitter}`}
           >
-            KBOY@kboy_silvergym
+            KBOY@{props.author.twitter}
           </a>
         )}
         {props.author.text}

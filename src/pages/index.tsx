@@ -33,7 +33,7 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
         title={"POD team"}
         description={"POD team"}
         keyword={"POD podcast music app"}
-        image={"https://podteam.vercel.app/img.jpg"}
+        image={"https://podteam.vercel.app//assets/ogp.png"}
         url={"https://podteam.vercel.app/"}
       />
       <Header />

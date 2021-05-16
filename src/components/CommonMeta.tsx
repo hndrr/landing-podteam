@@ -22,7 +22,7 @@ const CommonMeta = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta name="keywords" content={keyword} />
-      <meta property="og:type" content="blog" />
+      <meta property="og:type" content="lp" />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
       <meta property="og:site_name" content={title} />
@@ -39,7 +39,7 @@ const CommonMeta = ({
       />
       <link
         rel="apple-touch-icon"
-        href={"https://podteam.vercel.app/logo.png"}
+        href={"https://podteam.vercel.app/icon.png"}
       />
     </Head>
   );

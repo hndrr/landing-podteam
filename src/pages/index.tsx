@@ -2,6 +2,7 @@ import React from "react";
 import { NextComponentType, NextPageContext } from "next";
 import styled from "@emotion/styled";
 import tw from "twin.macro";
+import CommonMeta from "../components/CommonMeta";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Authors from "../components/Authors";
@@ -28,6 +29,13 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
 
   return (
     <>
+      <CommonMeta
+        title={"POD team"}
+        description={"POD team"}
+        keyword={"POD podcast music app"}
+        image={"https://podteam.vercel.app/img.jpg"}
+        url={"https://podteam.vercel.app/"}
+      />
       <Header />
       <Hero />
       <AppImages />

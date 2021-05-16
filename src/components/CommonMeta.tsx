@@ -33,14 +33,9 @@ const CommonMeta = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <link rel="canonical" href={url} />
-      <link
-        rel="shortcut icon"
-        href={"https://podteam.vercel.app/favicon.ico"}
-      />
-      <link
-        rel="apple-touch-icon"
-        href={"https://podteam.vercel.app/icon.png"}
-      />
+      <link rel="shortcut icon" href={"favicon.svg"} type="image/svg+xml" />
+      <link rel="icon alternate" href={"icon.png"} type="image/png" />
+      <link rel="apple-touch-icon" href={"icon.png"} />
     </Head>
   );
 };

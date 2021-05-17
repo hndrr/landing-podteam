@@ -1,3 +1,7 @@
+import React from "react";
+import Lottie from "lottie-react-web";
+import animation from "../../public/assets/logoAnimation.json";
+
 const Hero: React.FC = () => {
   return (
     <div className="px-2 py-8 md:px-0">
@@ -37,10 +41,15 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 mt-20 flex justify-center md:justify-end">
-            <div className="w-full max-w-md md:max-w-xs h-auto rounded-md sm:rounded-xl">
-              <img
+            <div className="w-full max-w-md md:max-w-xs h-auto mx-auto rounded-full shadow-2xl bg-gradient-to-tr from-red-500 to-red-600">
+              {/* <img
                 className="w-full rounded-lg mx-auto shadow-lg"
                 src="/assets/animation_300.gif"
+              /> */}
+              <Lottie
+                options={{
+                  animationData: animation,
+                }}
               />
             </div>
           </div>

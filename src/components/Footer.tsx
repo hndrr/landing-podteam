@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       <div className="mt-10 text-center">
         <a
           href="https://docs.google.com/forms/d/1T0lbgXf5TArjAgMSSyaXNijW3JZ3wvLEJEV3ADhfEBc/viewform?usp=sf_link"
-          className="text-indigo-600 underline"
+          className="text-indigo-600 font-bold underline"
         >
           お問い合わせ・不具合報告
         </a>

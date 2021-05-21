@@ -44,11 +44,12 @@ const Author: React.FC<Props> = (props) => {
         <img
           src={props.author.avatarUrl}
           className="object-cover w-full h-full"
+          alt={props.author.authorName}
         />
       </a>
-      <h4 className="text-xl font-bold text-gray-900">
+      <h3 className="text-xl font-bold text-gray-900">
         {props.author.authorName}
-      </h4>
+      </h3>
       <span className="inline-flex justify-center items-center space-x-5 sm:m-auto overflow-y-hidden">
         {props.author.website && <IconWeb url={props.author.website} />}
         {props.author.youtube && <IconYoutube url={props.author.youtube} />}

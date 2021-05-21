@@ -26,6 +26,7 @@ const Hero: React.FC = () => {
                   <img
                     src="/assets/playstore.svg"
                     className="h-12 bounce-top-icons"
+                    alt="playstore"
                   />
                 </a>
                 <a
@@ -35,6 +36,7 @@ const Hero: React.FC = () => {
                   <img
                     src="/assets/appstore.svg"
                     className="h-12 pr-4 bounce-top-icons"
+                    alt="appstore"
                   />
                 </a>
               </div>

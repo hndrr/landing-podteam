@@ -1,8 +1,7 @@
 const authors = [
   {
     authorName: "Rにしおか",
-    avatarUrl:
-      "https://pbs.twimg.com/profile_images/1306340269034336262/Gua2ip5u_400x400.jpg",
+    avatarUrl: "assets/Gua2ip5u_400x400.jpg",
     twitter: "R24oka",
     github: "RN24Nishioka",
     qiita: "RN24",
@@ -11,8 +10,7 @@ const authors = [
   },
   {
     authorName: "ポテセン",
-    avatarUrl:
-      "https://pbs.twimg.com/profile_images/1231486072309207040/HxEzaw0e_400x400.jpg",
+    avatarUrl: "assets/HxEzaw0e_400x400.jpg",
     twitter: "forelgoog",
     github: "hideaki10",
     // zenn: "",
@@ -22,7 +20,7 @@ const authors = [
   },
   {
     authorName: "とっく",
-    avatarUrl: "https://avatars.githubusercontent.com/u/69064290?v=4",
+    avatarUrl: "assets/69064290.jpg",
     website: "tokku-engineer.tech/",
     twitter: "tokkuu",
     github: "tokku5552",
@@ -33,8 +31,7 @@ const authors = [
   },
   {
     authorName: "コップ時計",
-    avatarUrl:
-      "https://pbs.twimg.com/profile_images/1369254753562103815/77AB6E8W_400x400.jpg",
+    avatarUrl: "assets/77AB6E8W_400x400.jpg",
     // twitter: "",
     github: "",
     // zenn: "",
@@ -44,7 +41,7 @@ const authors = [
   },
   {
     authorName: "hndr",
-    avatarUrl: "https://avatars.githubusercontent.com/u/53109993?v=4",
+    avatarUrl: "assets/53109993.jpg",
     twitter: "hndrr",
     github: "hndrr",
     zenn: "hndr",
@@ -54,8 +51,7 @@ const authors = [
   },
   {
     authorName: "KBOYのFlutter大学",
-    avatarUrl:
-      "https://pbs.twimg.com/profile_images/1303007901649256448/FzV_BaS5_400x400.jpg",
+    avatarUrl: "assets/FzV_BaS5_400x400.jpg",
     website: "kboyflutteruniv.com/",
     youtube: "UCReuARgZI-BFjioA8KBpjsw/",
     twitter: "kboyflutteruniv",

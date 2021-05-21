@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 mt-20 flex justify-center md:justify-end">
+          <div className="w-full md:w-1/2 mt-10 lg:mt-20 flex justify-center md:justify-end">
             <div className="w-full max-w-md md:max-w-xs h-auto mx-auto rounded-full shadow-2xl bg-gradient-to-b from-transparent to-indigo-600">
               {/* <img
                 className="w-full rounded-lg mx-auto shadow-lg"

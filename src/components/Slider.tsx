@@ -24,7 +24,7 @@ const Slider: React.FC<Props> = (props) => {
   const imageSlider = props.imageList.map((cardImage, index) => (
     <SwiperSlide
       key={index}
-      className={`img-fluid ${
+      className={`img-fluid cursor-pointer ${
         cardImage.name.match(/ios/i) ? "ios" : "android"
       }`}
     >

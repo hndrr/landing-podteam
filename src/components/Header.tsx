@@ -98,7 +98,7 @@ const Header: React.FC = () => {
                     Privacy
                   </a>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="contact"
                     spy={true}

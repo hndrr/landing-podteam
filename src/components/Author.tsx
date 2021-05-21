@@ -73,9 +73,9 @@ const Author: React.FC<Props> = (props) => {
         {props.author.authorName === "KBOYのFlutter大学" && (
           <a
             className="text-indigo-600"
-            href={`https://twitter.com/${props.author.twitter}`}
+            href={`https://twitter.com/kboy_silvergym`}
           >
-            KBOY@{props.author.twitter}
+            KBOY@kboy_silvergym
           </a>
         )}
         {props.author.text}

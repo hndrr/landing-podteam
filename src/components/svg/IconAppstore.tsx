@@ -6,7 +6,7 @@ const IconAppStore: React.FC<Props> = (props) => {
   return (
     <a
       href={`https://apps.apple.com/jp/${props.url}`}
-      className="text-gray-900 hover:text-gray-200"
+      className="text-gray-900 hover:text-gray-600"
     >
       <span className="sr-only">App Store</span>
       <svg

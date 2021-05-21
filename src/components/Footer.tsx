@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           <IconPlayStore url={"com.musicapp.pod"} />
           <IconAppStore url={"app/pod/id1559338636"} />
           <IconTwitter url={"podteam2525"} />
-          <IconGithub url={"#"} />
+          <IconGithub url={"hndrr/landing-podteam"} />
         </span>
       </div>
     </section>

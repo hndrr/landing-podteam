@@ -6,7 +6,7 @@ const IconGithub: React.FC<Props> = (props) => {
   return (
     <a
       href={`https://github.com/${props.url}`}
-      className="text-gray-900 hover:text-gray-200"
+      className="text-gray-900 hover:text-gray-600"
     >
       <span className="sr-only">Github</span>
       <svg

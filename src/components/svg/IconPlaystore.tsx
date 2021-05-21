@@ -6,7 +6,7 @@ const IconPlayStore: React.FC<Props> = (props) => {
   return (
     <a
       href={`https://play.google.com/store/apps/details?id=${props.url}&hl=ja&gl=JP`}
-      className="text-gray-900 hover:text-gray-200"
+      className="text-gray-900 hover:text-gray-600"
     >
       <span className="sr-only">Google Play</span>
       <svg

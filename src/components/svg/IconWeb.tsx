@@ -6,7 +6,7 @@ const IconWeb: React.FC<Props> = (props) => {
   return (
     <a
       href={`https://${props.url}`}
-      className="text-gray-900 hover:text-gray-200"
+      className="text-gray-900 hover:text-gray-600"
     >
       <span className="sr-only">Web</span>
       <svg

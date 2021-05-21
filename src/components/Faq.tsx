@@ -69,8 +69,9 @@ const Faq: React.FC = () => {
             </h5>
             <p>
               Flutter大学のコミュニティ内で開発されているため、Flutter大学へ入会する必要があります。
-              入会後slackに招待されますので、その中の #共同開発_music
-              channelでお声がけください！
+              入会後slackに招待されますので、その中の{" "}
+              <span className="text-indigo-600">#共同開発_music channel</span>
+              でお声がけください。
             </p>
             <h5 className="mt-10 mb-3 font-semibold text-gray-900">
               バグ報告や改善要望があります。

@@ -6,7 +6,7 @@ const IconZenn: React.FC<Props> = (props) => {
   return (
     <a
       href={`https://zenn.dev/${props.url}`}
-      className="text-gray-900 hover:text-gray-200"
+      className="text-gray-900 hover:text-gray-600"
     >
       <span className="sr-only">Zenn</span>
       <svg

@@ -8,7 +8,7 @@ type Props = {
 const AppImage: React.FC<Props> = (props) => {
   return (
     <img
-      className={`object-cover object-center w-full h-128 shadow`}
+      className={`object-cover object-center w-full h-128 shadow cursor-pointer`}
       src={`assets/${props.cardImage.src}`}
       alt={props.cardImage.name}
     />

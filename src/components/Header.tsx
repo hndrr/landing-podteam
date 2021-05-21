@@ -16,7 +16,7 @@ const Header: React.FC = () => {
             }
           >
             <Link
-              className="fixed md:static inline-block py-4 md:py-0"
+              className="fixed md:static inline-block py-4 md:py-0 cursor-pointer"
               activeClass="active"
               to="header"
               offset={-40}
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                   }
                 >
                   <Link
-                    className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="header"
                     offset={-40}
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
                     Home
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="android"
                     spy={true}
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                     Android
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="ios"
                     spy={true}
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                     iOS
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="member"
                     spy={true}
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                     Member
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="faq"
                     spy={true}

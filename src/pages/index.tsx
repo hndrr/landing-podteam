@@ -16,7 +16,7 @@ type Props = {
   numbers?: number[];
 };
 
-const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
+const HomePage: NextComponentType<NextPageContext, {}, Props> = (authors) => {
   // const numbers = [1, 2, 3];
   // const refContents = useRef<HTMLDivElement>();
 
@@ -39,7 +39,7 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
       <Header />
       <Hero />
       <AppImages />
-      <Authors />
+      <Authors authors={authors} />
       <Faq />
       <Footer />
     </>
@@ -49,5 +49,19 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = () => {
 const Anchor = styled.a`
   ${tw`font-mono text-sm hover:bg-blue-200`}
 `;
+
+export const getStaticProps = async () => {
+  const key = {
+    headers: { "X-API-KEY": process.env.API_KEY },
+  };
+  const data = await fetch("https://podteam.microcms.io/api/v1/authors", key)
+    .then((res) => res.json())
+    .catch(() => null);
+  return {
+    props: {
+      authors: data.contents,
+    },
+  };
+};
 
 export default HomePage;

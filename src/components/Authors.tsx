@@ -1,11 +1,12 @@
 import React from "react";
-import authors from "../array/authors";
+// import authors from "../array/authors";
 import Author from "./Author";
+import { GetStaticProps } from "next";
 
 type Props = {
   author: {
     authorName: string;
-    avatarUrl: string;
+    avatar: { url: string; height: number; width: number };
     youtube?: string;
     twitter?: string;
     github?: string;
@@ -16,10 +17,16 @@ type Props = {
   };
 };
 
-const Authors: React.FC = () => {
-  const Authorlists = authors.map((author, index: React.Key) => (
-    <Author key={index} author={author} />
-  ));
+interface StaticIndexProps {
+  authors: Props["author"][];
+}
+
+const Authors: any = ({ authors }) => {
+  const Authorlists = authors.authors.map(
+    (author: Props["author"], index: React.Key) => (
+      <Author key={index} author={author} />
+    )
+  );
 
   return (
     <section id="member" className="py-20">
@@ -29,6 +36,7 @@ const Authors: React.FC = () => {
         </h2>
         <div className="grid grid-cols-4 gap-12 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
           {Authorlists}
+          {JSON.stringify(authors)}
         </div>
       </div>
     </section>

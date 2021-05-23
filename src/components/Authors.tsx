@@ -1,7 +1,5 @@
 import React from "react";
-// import authors from "../array/authors";
 import Author from "./Author";
-import { GetStaticProps } from "next";
 
 type Props = {
   author: {
@@ -21,7 +19,7 @@ interface StaticIndexProps {
   authors: Props["author"][];
 }
 
-const Authors: any = ({ authors }) => {
+const Authors = ({ authors }) => {
   const Authorlists = authors.authors.map(
     (author: Props["author"], index: React.Key) => (
       <Author key={index} author={author} />
@@ -36,7 +34,6 @@ const Authors: any = ({ authors }) => {
         </h2>
         <div className="grid grid-cols-4 gap-12 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
           {Authorlists}
-          {JSON.stringify(authors)}
         </div>
       </div>
     </section>

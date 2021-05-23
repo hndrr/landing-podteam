@@ -1,11 +1,10 @@
 import React from "react";
-import authors from "../array/authors";
 import Author from "./Author";
 
 type Props = {
   author: {
     authorName: string;
-    avatarUrl: string;
+    avatar: { url: string; height: number; width: number };
     youtube?: string;
     twitter?: string;
     github?: string;
@@ -16,10 +15,16 @@ type Props = {
   };
 };
 
-const Authors: React.FC = () => {
-  const Authorlists = authors.map((author, index: React.Key) => (
-    <Author key={index} author={author} />
-  ));
+interface StaticIndexProps {
+  authors: Props["author"][];
+}
+
+const Authors = ({ authors }) => {
+  const Authorlists = authors.authors.map(
+    (author: Props["author"], index: React.Key) => (
+      <Author key={index} author={author} />
+    )
+  );
 
   return (
     <section id="member" className="py-20">

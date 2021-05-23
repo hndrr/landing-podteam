@@ -1,7 +1,7 @@
 const authors = [
   {
     authorName: "Rにしおか",
-    avatarUrl: "assets/Gua2ip5u_400x400.jpg",
+    avatarUrl: "assets/z5UBnBVz_400x400.jpg",
     twitter: "R24oka",
     github: "RN24Nishioka",
     qiita: "RN24",

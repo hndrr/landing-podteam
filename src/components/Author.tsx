@@ -11,7 +11,7 @@ import IconZenn from "./svg/IconZenn";
 type Props = {
   author: {
     authorName: string;
-    avatar: { url: string; height: number; width: number };
+    avatarUrl: { url: string; height: number; width: number };
     website?: string;
     youtube?: string;
     twitter?: string;
@@ -42,7 +42,7 @@ const Author: React.FC<Props> = (props) => {
         className="w-20 h-20 overflow-hidden rounded-full border-2 border-gray-50"
       >
         <img
-          src={props.author.avatar.url}
+          src={props.author.avatarUrl.url}
           className="object-cover w-full h-full"
           alt={props.author.authorName}
         />

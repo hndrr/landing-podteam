@@ -4,7 +4,7 @@ import Author from "./Author";
 type Props = {
   author: {
     authorName: string;
-    avatar: { url: string; height: number; width: number };
+    avatarUrl: { url: string; height: number; width: number };
     youtube?: string;
     twitter?: string;
     github?: string;
@@ -20,7 +20,7 @@ interface StaticIndexProps {
 }
 
 const Authors = ({ authors }) => {
-  const Authorlists = authors.authors.map(
+  const Authorlists = authors.map(
     (author: Props["author"], index: React.Key) => (
       <Author key={index} author={author} />
     )

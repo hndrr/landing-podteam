@@ -2,7 +2,7 @@ import React from "react";
 import Lottie from "lottie-react-web";
 import animation from "../../public/assets/logoAnimation.json";
 
-const Hero: React.FC = () => {
+const Hero = ({ hero }) => {
   return (
     <div className="px-2 py-8 md:px-0">
       <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
@@ -10,33 +10,29 @@ const Hero: React.FC = () => {
           <div className="w-full md:w-1/2 md:px-3">
             <div className="w-full pb-6 mt-4  space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:mx-auto lg:pr-0 md:pb-0 md:mt-20">
               <h1 className="text-2xl font-extrabold tracking-tight text-gray-900">
-                <span className="block">
-                  PODはポッドキャストの購読や端末内の音楽を再生することができるアプリです。
-                </span>
-                <span className="block text-indigo-600">
-                  お気に入りの音楽やポッドキャストを見つけて楽しみましょう！
-                </span>
+                <span className="block">{hero.desc}</span>
+                <span className="block text-indigo-600">{hero.desc2}</span>
               </h1>
               <p className="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl"></p>
               <div className="flex w-full justify-around md:justify-start lg:pb-0 fade-in">
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.musicapp.pod&hl=ja&gl=JP"
+                  href={hero.img[0].href}
                   className="flex items-center px-6 py-3 mb-3 rounded-md"
                 >
                   <img
-                    src="/assets/playstore.svg"
+                    src={hero.img[0].src.url}
                     className="h-12 bounce-top-icons"
-                    alt="playstore"
+                    alt={hero.img[0].alt}
                   />
                 </a>
                 <a
-                  href="https://apps.apple.com/jp/app/pod/id1559338636"
+                  href={hero.img[1].href}
                   className="flex items-center px-6 py-3 mb-3 rounded-md "
                 >
                   <img
-                    src="/assets/appstore.svg"
+                    src={hero.img[1].src.url}
                     className="h-12 pr-4 bounce-top-icons"
-                    alt="appstore"
+                    alt={hero.img[1].alt}
                   />
                 </a>
               </div>

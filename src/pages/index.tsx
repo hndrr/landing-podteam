@@ -16,7 +16,7 @@ type Props = {
   numbers?: number[];
 };
 
-const HomePage: NextComponentType<NextPageContext, {}, Props> = (authors) => {
+const HomePage = ({ hero, authors, faq }) => {
   // const numbers = [1, 2, 3];
   // const refContents = useRef<HTMLDivElement>();
 
@@ -37,7 +37,7 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = (authors) => {
         url={"https://podteam.vercel.app/"}
       />
       <Header />
-      <Hero />
+      <Hero hero={hero} />
       <AppImages />
       <Authors authors={authors} />
       <Faq />
@@ -54,12 +54,14 @@ export const getStaticProps = async () => {
   const key = {
     headers: { "X-API-KEY": process.env.API_KEY },
   };
-  const data = await fetch("https://podteam.microcms.io/api/v1/authors", key)
+  const data = await fetch("https://podteam.microcms.io/api/v1/contents", key)
     .then((res) => res.json())
     .catch(() => null);
   return {
     props: {
-      authors: data.contents,
+      hero: data.contents[0].hero,
+      authors: data.contents[0].authors,
+      faq: data.contents[0].faq,
     },
   };
 };

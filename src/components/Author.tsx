@@ -21,10 +21,11 @@ type Props = {
     qiita?: string;
     role: string;
     text: string;
+    link: { text: string; href: string };
   };
 };
 
-const Author: React.FC<Props> = (props) => {
+const Author: React.FC<Props> = ({ author }) => {
   const isMd = useMediaQuery({
     query: "(min-width: 768px)",
   });
@@ -33,53 +34,45 @@ const Author: React.FC<Props> = (props) => {
     <div className="flex flex-col items-center justify-between col-span-4 px-8 py-8 space-y-3 rounded-lg shadow-lg bg-gray-100">
       <a
         href={
-          props.author.website
-            ? `https://${props.author.website}`
-            : props.author.twitter
-            ? `https://twitter.com/${props.author.twitter}`
+          author.website
+            ? `https://${author.website}`
+            : author.twitter
+            ? `https://twitter.com/${author.twitter}`
             : "#"
         }
         className="w-20 h-20 overflow-hidden rounded-full border-2 border-gray-50"
       >
         <img
-          src={props.author.avatarUrl.url}
+          src={author.avatarUrl.url}
           className="object-cover w-full h-full"
-          alt={props.author.authorName}
+          alt={author.authorName}
         />
       </a>
-      <h3 className="text-xl font-bold text-gray-900">
-        {props.author.authorName}
-      </h3>
+      <h3 className="text-xl font-bold text-gray-900">{author.authorName}</h3>
       <span className="inline-flex justify-center items-center space-x-5 sm:m-auto overflow-y-hidden">
-        {props.author.website && <IconWeb url={props.author.website} />}
-        {props.author.youtube && <IconYoutube url={props.author.youtube} />}
-        {props.author.twitter && <IconTwitter url={props.author.twitter} />}
-        {props.author.instagram && (
-          <IconInstgaram url={props.author.instagram} />
+        {author.website && <IconWeb url={author.website} />}
+        {author.youtube && <IconYoutube url={author.youtube} />}
+        {author.twitter && <IconTwitter url={author.twitter} />}
+        {author.instagram && <IconInstgaram url={author.instagram} />}
+        {author.github && <IconGithub url={author.github} />}
+        {author.zenn && <IconZenn url={author.zenn} />}
+        {(isMd || !author.website) && !author.instagram && author.qiita && (
+          <IconQiita url={author.qiita} />
         )}
-        {props.author.github && <IconGithub url={props.author.github} />}
-        {props.author.zenn && <IconZenn url={props.author.zenn} />}
-        {(isMd || !props.author.website) &&
-          !props.author.instagram &&
-          props.author.qiita && <IconQiita url={props.author.qiita} />}
       </span>
-      {(props.author.instagram || (!isMd && props.author.website)) &&
-        props.author.qiita && (
-          <span className="inline-flex justify-center items-center h-6 overflow-y-hidden">
-            <IconQiita url={props.author.qiita} />
-          </span>
-        )}
-      <p className="text-base text-center text-gray-700">{props.author.role}</p>
+      {(author.instagram || (!isMd && author.website)) && author.qiita && (
+        <span className="inline-flex justify-center items-center h-6 overflow-y-hidden">
+          <IconQiita url={author.qiita} />
+        </span>
+      )}
+      <p className="text-base text-center text-gray-700">{author.role}</p>
       <p className="text-base text-center text-gray-700">
-        {props.author.authorName === "KBOYのFlutter大学" && (
-          <a
-            className="text-indigo-600"
-            href={`https://twitter.com/kboy_silvergym`}
-          >
-            KBOY@kboy_silvergym
+        {author.link && (
+          <a className="text-indigo-600" href={author.link.href}>
+            {author.link.text}
           </a>
         )}
-        {props.author.text}
+        {author.text}
       </p>
     </div>
   );

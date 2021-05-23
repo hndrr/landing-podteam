@@ -1,30 +1,27 @@
 import React from "react";
 import Author from "./Author";
 
-type Props = {
-  author: {
-    authorName: string;
-    avatarUrl: { url: string; height: number; width: number };
-    youtube?: string;
-    twitter?: string;
-    github?: string;
-    zenn?: string;
-    qiita?: string;
-    role: string;
-    text: string;
-  };
-};
-
-interface StaticIndexProps {
-  authors: Props["author"][];
+interface Author {
+  authorName: string;
+  avatarUrl: { url: string; height: number; width: number };
+  youtube?: string;
+  twitter?: string;
+  github?: string;
+  zenn?: string;
+  qiita?: string;
+  role: string;
+  text: string;
+  link: { text: string; href: string };
 }
 
-const Authors = ({ authors }) => {
-  const Authorlists = authors.map(
-    (author: Props["author"], index: React.Key) => (
-      <Author key={index} author={author} />
-    )
-  );
+interface Authors {
+  authors: Author[];
+}
+
+const Authors: React.FC<Authors> = ({ authors }) => {
+  const Authorlists = authors.map((author: Author, index: React.Key) => (
+    <Author key={index} author={author} />
+  ));
 
   return (
     <section id="member" className="py-20">

@@ -5,12 +5,12 @@ type Props = {
   };
 };
 
-const AppImage: React.FC<Props> = (props) => {
+const AppImage: React.FC<Props> = ({ cardImage }) => {
   return (
     <img
       className={`object-cover object-center w-full h-128 shadow`}
-      src={`assets/${props.cardImage.src}`}
-      alt={props.cardImage.name}
+      src={`assets/${cardImage.src}`}
+      alt={cardImage.name}
     />
   );
 };

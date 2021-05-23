@@ -2,17 +2,23 @@ import React from "react";
 import Lottie from "lottie-react-web";
 import animation from "../../public/assets/logoAnimation.json";
 
-interface HeroImg {
+interface HeroImgIcon {
   src: { url: string; height: number; width: number };
   href: string;
   alt: string;
 }
 
 type Props = {
-  hero: { desc: string; desc2: string; imgs: HeroImg[] };
+  hero: { desc: string; desc2: string; imgs: HeroImgIcon[] };
 };
 
 const Hero: React.FC<Props> = ({ hero }) => {
+  const HeroImgIcon = hero.imgs.map((img: HeroImgIcon) => (
+    <a href={img.href} className="flex items-center px-6 py-3 mb-3 rounded-md">
+      <img src={img.src.url} className="h-12 bounce-top-icons" alt={img.alt} />
+    </a>
+  ));
+
   return (
     <div className="px-2 py-8 md:px-0">
       <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
@@ -23,20 +29,8 @@ const Hero: React.FC<Props> = ({ hero }) => {
                 <span className="block">{hero.desc}</span>
                 <span className="block text-indigo-600">{hero.desc2}</span>
               </h1>
-              <p className="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl"></p>
               <div className="flex w-full justify-around md:justify-start lg:pb-0 fade-in">
-                {hero.imgs.map((img: HeroImg) => (
-                  <a
-                    href={img.href}
-                    className="flex items-center px-6 py-3 mb-3 rounded-md"
-                  >
-                    <img
-                      src={img.src.url}
-                      className="h-12 bounce-top-icons"
-                      alt={img.alt}
-                    />
-                  </a>
-                ))}
+                {HeroImgIcon}
               </div>
             </div>
           </div>

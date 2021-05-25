@@ -16,7 +16,7 @@ type Props = {
   numbers?: number[];
 };
 
-const HomePage = ({ hero, authors, faq }) => {
+const HomePage = ({ hero, authors, faqs, contact }) => {
   // const numbers = [1, 2, 3];
   // const refContents = useRef<HTMLDivElement>();
 
@@ -40,8 +40,9 @@ const HomePage = ({ hero, authors, faq }) => {
       <Hero hero={hero} />
       <AppImages />
       <Authors authors={authors} />
-      <Faq />
-      <Footer />
+      {JSON.stringify(faqs)}
+      <Faq faqs={faqs} contact={contact} />
+      <Footer contact={contact} />
     </>
   );
 };
@@ -61,7 +62,8 @@ export const getStaticProps = async () => {
     props: {
       hero: data.contents[0].hero,
       authors: data.contents[0].authors,
-      faq: data.contents[0].faq,
+      faqs: data.contents[0].faq,
+      contact: data.contents[0].contact,
     },
   };
 };

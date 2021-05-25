@@ -1,4 +1,40 @@
-const Faq: React.FC = () => {
+interface Faq {
+  length: number;
+  question: string;
+  answer: string;
+  link: { text: string; href: string };
+}
+interface Faqs {
+  faqs: Faq[];
+  contact: { text: string; href: string };
+}
+
+const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
+  const FaqList = (faq: Faq, index: number) => {
+    const faqAnswer = (faq.answer || "").split(/(\n)/).map((item, index) => {
+      return <>{item.match(/\n/) ? <br /> : item}</>;
+    });
+
+    return (
+      <>
+        <h3 className="mt-10 mb-3 font-semibold text-gray-900">
+          {faq.question}
+        </h3>
+        <p>
+          {index === 7 && (
+            <a
+              href={contact.href}
+              className="text-indigo-600 font-bold underline"
+            >
+              {contact.text}
+            </a>
+          )}
+          {faqAnswer}
+        </p>
+      </>
+    );
+  };
+
   return (
     <section id="faq" className="py-20">
       <div className="px-8 mx-auto max-w-7xl lg:px-16">
@@ -7,7 +43,34 @@ const Faq: React.FC = () => {
         </h2>
         <div className="grid grid-cols-1 gap-0 text-gray-700 md:grid-cols-2 md:gap-16">
           <div>
-            <h3 className="mt-10 mb-3 font-semibold text-gray-900">
+            {faqs.map((faq, index) => index < 4 && FaqList(faq, index))}
+          </div>
+          <div>
+            {faqs.map((faq, index) => index >= 4 && FaqList(faq, index))}
+          </div>
+          {/* <div>
+            {faqs
+              .filter((faq) => faq.length > 4)
+              .map((faq) => (
+                <>
+                  <h3 className="mt-10 mb-3 font-semibold text-gray-900">
+                    {faq.question}
+                  </h3>
+                  <p>
+                    {faq.link && (
+                      <a
+                        href={faq.link.href}
+                        className="text-indigo-600 font-bold underline"
+                      >
+                        {faq.link.text}
+                      </a>
+                    )}
+                    {faq.answer}
+                  </p>
+                </>
+              ))}
+          </div> */}
+          {/* <h3 className="mt-10 mb-3 font-semibold text-gray-900">
               PODとはどんなアプリですか
             </h3>
             <p>
@@ -86,8 +149,7 @@ const Faq: React.FC = () => {
                 お問い合わせ・不具合報告
               </a>
               までお願いします。
-            </p>
-          </div>
+            </p> */}
         </div>
       </div>
     </section>

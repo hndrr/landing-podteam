@@ -1,5 +1,6 @@
 import React from "react";
 import Author from "./Author";
+import H2 from "./H2";
 
 interface Author {
   authorName: string;
@@ -26,9 +27,7 @@ const Authors: React.FC<Authors> = ({ authors }) => {
   return (
     <section id="member" className="py-20">
       <div className="container max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
-          POD Team Members
-        </h2>
+        <H2>POD Team Members</H2>
         <div className="grid grid-cols-4 gap-12 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
           {Authorlists}
         </div>

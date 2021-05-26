@@ -3,13 +3,12 @@ import IconTwitter from "./svg/IconTwitter";
 import IconGithub from "./svg/IconGithub";
 import IconPlayStore from "./svg/IconPlaystore";
 import IconAppStore from "./svg/IconAppstore";
+import H2 from "./H2";
 
 const Footer = ({ contact }) => {
   return (
     <section id="contact" className="body-font text-gray-700">
-      <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
-        Contact
-      </h2>
+      <H2>Contact</H2>
       <div className="mt-10 text-center">
         <a href={contact.href} className="text-indigo-600 font-bold underline">
           {contact.text}

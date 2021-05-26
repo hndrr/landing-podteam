@@ -1,3 +1,6 @@
+import React from "react";
+import H2 from "./H2";
+
 interface Faq {
   length: number;
   question: string;
@@ -38,9 +41,7 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
   return (
     <section id="faq" className="py-20">
       <div className="px-8 mx-auto max-w-7xl lg:px-16">
-        <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
-          Frequently Asked Questions
-        </h2>
+        <H2>Frequently Asked Questions</H2>
         <div className="grid grid-cols-1 gap-0 text-gray-700 md:grid-cols-2 md:gap-16">
           <div>
             {faqs.map((faq, index) => index < 4 && FaqList(faq, index))}

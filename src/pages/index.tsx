@@ -9,6 +9,7 @@ import Authors from "../components/Authors";
 import Footer from "../components/Footer";
 import AppImages from "../components/AppImages";
 import Faq from "../components/Faq";
+import { client } from "../libs/client";
 // import { useCallback, useRef } from "react";
 
 type Props = {
@@ -40,7 +41,7 @@ const HomePage = ({ hero, authors, faqs, contact }) => {
       <Hero hero={hero} />
       <AppImages />
       <Authors authors={authors} />
-      {JSON.stringify(faqs)}
+      {/* {JSON.stringify(data.contents)} */}
       <Faq faqs={faqs} contact={contact} />
       <Footer contact={contact} />
     </>
@@ -52,12 +53,19 @@ const Anchor = styled.a`
 `;
 
 export const getStaticProps = async () => {
-  const key = {
-    headers: { "X-API-KEY": process.env.API_KEY },
-  };
-  const data = await fetch("https://podteam.microcms.io/api/v1/contents", key)
-    .then((res) => res.json())
-    .catch(() => null);
+  // const key = {
+  //   headers: { "X-API-KEY": process.env.API_KEY },
+  // };
+  // const data = await fetch("https://podteam.microcms.io/api/v1/contents", key)
+  //   .then((res) => res.json())
+  //   .catch(() => null);
+
+  const data: {
+    contents: { hero: any; authors: any; faq: any; contact: any }[];
+  } = await client.get({
+    endpoint: "contents",
+  });
+
   return {
     props: {
       hero: data.contents[0].hero,

@@ -3,19 +3,15 @@ import IconTwitter from "./svg/IconTwitter";
 import IconGithub from "./svg/IconGithub";
 import IconPlayStore from "./svg/IconPlaystore";
 import IconAppStore from "./svg/IconAppstore";
+import H2 from "./H2";
 
-const Footer: React.FC = () => {
+const Footer = ({ contact }) => {
   return (
     <section id="contact" className="body-font text-gray-700">
-      <h2 className="text-5xl font-bold tracking-tight text-center text-gray-900">
-        Contact
-      </h2>
+      <H2>Contact</H2>
       <div className="mt-10 text-center">
-        <a
-          href="https://docs.google.com/forms/d/1T0lbgXf5TArjAgMSSyaXNijW3JZ3wvLEJEV3ADhfEBc/viewform?usp=sf_link"
-          className="text-indigo-600 font-bold underline"
-        >
-          お問い合わせ・不具合報告
+        <a href={contact.href} className="text-indigo-600 font-bold underline">
+          {contact.text}
         </a>
       </div>
       <div className=" container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">

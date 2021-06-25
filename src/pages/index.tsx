@@ -9,24 +9,15 @@ import Authors from "../components/Authors";
 import Footer from "../components/Footer";
 import AppImages from "../components/AppImages";
 import Faq from "../components/Faq";
-// import { useCallback, useRef } from "react";
+import { client } from "../libs/client";
+import Update from "../components/Update";
 
 type Props = {
   className?: string;
   numbers?: number[];
 };
 
-const HomePage: NextComponentType<NextPageContext, {}, Props> = (authors) => {
-  // const numbers = [1, 2, 3];
-  // const refContents = useRef<HTMLDivElement>();
-
-  // const scrollToContents = useCallback(() => {
-  //   refContents.current.scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //   });
-  // }, [refContents]);
-
+const HomePage = ({ hero, authors, faqs, contact }) => {
   return (
     <>
       <CommonMeta
@@ -37,11 +28,13 @@ const HomePage: NextComponentType<NextPageContext, {}, Props> = (authors) => {
         url={"https://podteam.vercel.app/"}
       />
       <Header />
-      <Hero />
+      <Hero hero={hero} />
       <AppImages />
+      <Update />
       <Authors authors={authors} />
-      <Faq />
-      <Footer />
+      {/* {JSON.stringify(data.contents)} */}
+      <Faq faqs={faqs} contact={contact} />
+      <Footer contact={contact} />
     </>
   );
 };
@@ -51,15 +44,25 @@ const Anchor = styled.a`
 `;
 
 export const getStaticProps = async () => {
-  const key = {
-    headers: { "X-API-KEY": process.env.API_KEY },
-  };
-  const data = await fetch("https://podteam.microcms.io/api/v1/authors", key)
-    .then((res) => res.json())
-    .catch(() => null);
+  const data: {
+    contents: {
+      hero: any;
+      authors: any;
+      // update: any;
+      faq: any;
+      contact: any;
+    }[];
+  } = await client.get({
+    endpoint: "contents",
+  });
+
   return {
     props: {
-      authors: data.contents,
+      hero: data.contents[0].hero,
+      authors: data.contents[0].authors,
+      faqs: data.contents[0].faq,
+      // update: data.contents[0].update,
+      contact: data.contents[0].contact,
     },
   };
 };

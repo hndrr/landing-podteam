@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 import AppImages from "../components/AppImages";
 import Faq from "../components/Faq";
 import { client } from "../libs/client";
-// import { useCallback, useRef } from "react";
+import Update from "../components/Update";
 
 type Props = {
   className?: string;
@@ -18,16 +18,6 @@ type Props = {
 };
 
 const HomePage = ({ hero, authors, faqs, contact }) => {
-  // const numbers = [1, 2, 3];
-  // const refContents = useRef<HTMLDivElement>();
-
-  // const scrollToContents = useCallback(() => {
-  //   refContents.current.scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //   });
-  // }, [refContents]);
-
   return (
     <>
       <CommonMeta
@@ -40,6 +30,7 @@ const HomePage = ({ hero, authors, faqs, contact }) => {
       <Header />
       <Hero hero={hero} />
       <AppImages />
+      <Update />
       <Authors authors={authors} />
       {/* {JSON.stringify(data.contents)} */}
       <Faq faqs={faqs} contact={contact} />
@@ -53,15 +44,14 @@ const Anchor = styled.a`
 `;
 
 export const getStaticProps = async () => {
-  // const key = {
-  //   headers: { "X-API-KEY": process.env.API_KEY },
-  // };
-  // const data = await fetch("https://podteam.microcms.io/api/v1/contents", key)
-  //   .then((res) => res.json())
-  //   .catch(() => null);
-
   const data: {
-    contents: { hero: any; authors: any; faq: any; contact: any }[];
+    contents: {
+      hero: any;
+      authors: any;
+      // update: any;
+      faq: any;
+      contact: any;
+    }[];
   } = await client.get({
     endpoint: "contents",
   });
@@ -71,6 +61,7 @@ export const getStaticProps = async () => {
       hero: data.contents[0].hero,
       authors: data.contents[0].authors,
       faqs: data.contents[0].faq,
+      // update: data.contents[0].update,
       contact: data.contents[0].contact,
     },
   };

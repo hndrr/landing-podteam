@@ -74,6 +74,16 @@ const Header: React.FC = () => {
                   <Link
                     className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
+                    to="update"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    Update
+                  </Link>
+                  <Link
+                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
+                    activeClass="active"
                     to="member"
                     spy={true}
                     smooth={true}
@@ -146,6 +156,9 @@ const Header: React.FC = () => {
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
               </svg>
+            </div>
+            <div className="fixed mt-16 right-0 mr-4 flex flex-col items-center justify-center w-10 text-sm md:hidden pointer-events-none">
+              Menu
             </div>
           </div>
         </nav>

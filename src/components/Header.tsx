@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                 (navbarOpen ? " flex" : " hidden")
               }
             >
-              <div className="flex-col w-full h-auto overflow-hidden justify-center rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+              <div className="flex-col w-full h-auto overflow-hidden justify-center rounded bg-indigo-300 bg-opacity-25 md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
                 <div
                   className={
                     "flex flex-col items-start justify-center w-full space-x-6 text-center md:w-2/3 md:mt-0 md:flex-row md:items-center"
@@ -122,7 +122,7 @@ const Header: React.FC = () => {
             </div>
 
             <div
-              className="fixed right-0 mr-4 flex flex-col items-center justify-center w-10 h-10 bg-white rounded cursor-pointer md:hidden hover:bg-gray-100"
+              className="fixed -mt-4 right-0 mr-4 flex flex-col items-center justify-center w-10 h-10 bg-white rounded cursor-pointer md:hidden hover:bg-gray-100"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <svg
@@ -157,7 +157,7 @@ const Header: React.FC = () => {
                 ></path>
               </svg>
             </div>
-            <div className="fixed mt-16 right-0 mr-4 flex flex-col items-center justify-center w-10 text-sm md:hidden pointer-events-none">
+            <div className="fixed mt-12 right-0 mr-4 flex flex-col items-center justify-center w-10 text-sm md:hidden pointer-events-none">
               Menu
             </div>
           </div>

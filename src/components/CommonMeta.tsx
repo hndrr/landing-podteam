@@ -37,6 +37,10 @@ const CommonMeta = ({
       <link rel="shortcut icon" href={"favicon.svg"} type="image/svg+xml" />
       <link rel="icon alternate" href={"icon.png"} type="image/png" />
       <link rel="apple-touch-icon" href={"icon.png"} />
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Benne&family=Shippori+Mincho+B1:wght@500;600;700;800&display=swap');
+      </style>
     </Head>
   );
 };

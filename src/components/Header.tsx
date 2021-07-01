@@ -120,9 +120,8 @@ const Header: React.FC = () => {
                 </div>
               </div>
             </div>
-
             <div
-              className="fixed -mt-4 right-0 mr-4 flex flex-col items-center justify-center w-10 h-10 bg-white rounded cursor-pointer md:hidden hover:bg-gray-100"
+              className="fixed top-38px right-0 mr-4 flex flex-col items-center justify-center w-10 h-10 bg-white rounded cursor-pointer md:hidden hover:bg-gray-100"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <svg
@@ -157,7 +156,7 @@ const Header: React.FC = () => {
                 ></path>
               </svg>
             </div>
-            <div className="fixed mt-12 right-0 mr-4 flex flex-col items-center justify-center w-10 text-sm md:hidden pointer-events-none">
+            <div className="fixed top-80px right-0 mr-4 flex flex-col items-center justify-center w-10 text-sm md:hidden pointer-events-none">
               Menu
             </div>
           </div>

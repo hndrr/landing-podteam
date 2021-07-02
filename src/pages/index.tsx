@@ -24,7 +24,7 @@ const HomePage = ({ hero, authors, faqs, contact }) => {
         title={"POD team"}
         description={"POD team"}
         keyword={"POD podcast music app"}
-        image={"https://podteam.vercel.app/assets/ogp.png"}
+        image={"https://podteam.vercel.app/assets/ogp.png?202107"}
         url={"https://podteam.vercel.app/"}
       />
       <Header />

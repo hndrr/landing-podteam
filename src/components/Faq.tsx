@@ -16,7 +16,7 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
   const FaqList = (faq: Faq, index: number) => {
     const channel = "#共同開発_music";
     const faqAnswer = (faq.answer || "")
-      .split(/(\n|channel)/)
+      .split(/(\n|\s|channel|\d{1,})/)
       .map((item, index) => {
         return (
           <>
@@ -24,6 +24,8 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
               <br />
             ) : item.match(channel) ? (
               <span className="text-indigo-600 font-bold">{channel} </span>
+            ) : item.match(/\d{1,}/) ? (
+              <span className="num">{item}</span>
             ) : (
               item
             )}

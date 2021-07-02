@@ -22,7 +22,7 @@ const Footer = ({ contact }) => {
           POD
         </a>
         <p className="mt-4 text-sm text-gray-900 sm:ml-4 sm:pl-4 sm:border-l sm:border-black sm:mt-0">
-          © 2021 POD Team.
+          © <span className="num">2021</span> POD Team.
         </p>
         <span className="inline-flex justify-center items-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
           <IconPlayStore url={"com.musicapp.pod"} />

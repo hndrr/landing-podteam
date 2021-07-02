@@ -12,7 +12,9 @@ const Faq: React.FC = () => {
         <H2>Update</H2>
         <div className="grid grid-cols-1 gap-0 text-gray-700 md:gap-16">
           <ul className="mt-10">
-            <li className="font-bold">バージョン 1.2.1</li>
+            <li className="font-bold">
+              バージョン <span className="num">1.2.1</span>
+            </li>
             <li>
               Podcastの表示順が切り替えられない、レイアウトが崩れるなどの細かいバグを修正しました。
             </li>

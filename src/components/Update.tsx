@@ -12,11 +12,61 @@ const Faq: React.FC = () => {
         <H2>Update</H2>
         <div className="grid grid-cols-1 gap-0 text-gray-700 md:gap-16">
           <ul className="mt-10">
-            <li className="font-bold">
-              バージョン <span className="num">1.2.1</span>
+            <li className="mb-4">
+              <span className="font-bold">Version </span>
+              <span className="font-bold num">1.3.0</span>
+              <span className="ml-20 num">2021/8/22</span>
+              <ul className="mt-2">
+                <li>
+                  ・ログイン後、ドロワーにログイン中のメールアドレスが表示されるようになりました。
+                </li>
+                <li>
+                  ・登録済みポッドキャストのリストを逆順で表示できるようになりました。
+                </li>
+                <li>
+                  ・再生中のポッドキャストのエピソード、音楽アルバム曲を常に表示するステータスバーを追加しました。
+                </li>
+                <li>
+                  ・再生中の音楽、アルバムリスト、ポッドキャストリストがハイライトされるようになりました。
+                </li>
+                <li>・ログイン、サインアップ時のバグなどを修正しました。</li>
+              </ul>
             </li>
-            <li>
-              Podcastの表示順が切り替えられない、レイアウトが崩れるなどの細かいバグを修正しました。
+            <li className="mb-4">
+              <span className="font-bold">Version </span>
+              <span className="font-bold num">1.2.1</span>
+              <span className="ml-20 num">2021/6/24</span>
+              <ul className="mt-2">
+                <li>
+                  ・Podcastの表示順が切り替えられない、レイアウトが崩れるなどの細かいバグを修正しました。
+                </li>
+              </ul>
+            </li>
+            <li className="mb-4">
+              <span className="font-bold">Version </span>
+              <span className="font-bold num">1.2.0</span>
+              <span className="ml-20 num">2021/5/5</span>
+              <ul className="mt-2">
+                <li>・ドロワー、 問い合わせフォーム追加</li>
+                <li>・ポッドキャスト登録のUI改善</li>
+                <li>・apple/googleログインの追加</li>
+              </ul>
+            </li>
+            <li className="mb-4">
+              <span className="font-bold">Version </span>
+              <span className="font-bold num">1.1.0</span>
+              <span className="ml-20 num">2021/4/6</span>
+              <ul className="mt-2">
+                <li>・いくつかのバグを修正。</li>
+              </ul>
+            </li>
+            <li className="mb-4">
+              <span className="font-bold">Version </span>
+              <span className="font-bold num">1.0</span>
+              <span className="ml-20 num">2021/3/27</span>
+              <ul className="mt-2">
+                <li>・リリース</li>
+              </ul>
             </li>
           </ul>
         </div>

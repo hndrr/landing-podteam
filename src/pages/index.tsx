@@ -17,7 +17,7 @@ type Props = {
   numbers?: number[];
 };
 
-const HomePage = ({ hero, authors, faqs, contact }) => {
+const HomePage = ({ hero, authors, faqs, contact, updates }) => {
   return (
     <>
       <CommonMeta
@@ -30,9 +30,8 @@ const HomePage = ({ hero, authors, faqs, contact }) => {
       <Header />
       <Hero hero={hero} />
       <AppImages />
-      <Update />
+      <Update updates={updates} />
       <Authors authors={authors} />
-      {/* {JSON.stringify(data.contents)} */}
       <Faq faqs={faqs} contact={contact} />
       <Footer contact={contact} />
     </>
@@ -48,7 +47,7 @@ export const getStaticProps = async () => {
     contents: {
       hero: any;
       authors: any;
-      // update: any;
+      update: any;
       faq: any;
       contact: any;
     }[];
@@ -61,7 +60,7 @@ export const getStaticProps = async () => {
       hero: data.contents[0].hero,
       authors: data.contents[0].authors,
       faqs: data.contents[0].faq,
-      // update: data.contents[0].update,
+      updates: data.contents[0].update,
       contact: data.contents[0].contact,
     },
   };

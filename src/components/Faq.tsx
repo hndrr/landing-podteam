@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import H2 from "./H2";
 
 interface Faq {
@@ -19,7 +19,7 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
       .split(/(\n|\s|channel|\d{1,})/)
       .map((item, index) => {
         return (
-          <>
+          <Fragment key={"faqAnsweritem$index"}>
             {item.match(/\n/) ? (
               <br />
             ) : item.match(channel) ? (
@@ -29,7 +29,7 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
             ) : (
               item
             )}
-          </>
+          </Fragment>
         );
       });
 

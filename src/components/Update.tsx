@@ -1,18 +1,50 @@
 import React from "react";
 import H2 from "./H2";
 
-interface Update {
-  text: string;
+interface UpdateList {
+  update_list: string;
 }
 
-const Faq: React.FC = () => {
+interface Update {
+  version: string;
+  date: Date;
+  list: UpdateList[];
+}
+
+interface Updates {
+  updates: Update[];
+}
+
+const Update: React.FC<Updates> = ({ updates }) => {
+  const UpdateComponent = updates.map((update, index) => {
+    const UpdateListComponent: JSX.Element[] = update.list.map(
+      (update_list, index) => {
+        return (
+          <li key={index} className="list-disc ml-6 mb-2">
+            {update_list.update_list}
+          </li>
+        );
+      }
+    );
+
+    return (
+      <li key={index} className="mb-4">
+        <span className="font-bold">Version </span>
+        <span className="font-bold num">{update.version}</span>
+        <span className="ml-20 num">{update.date}</span>
+        <ul className="mt-2">{UpdateListComponent}</ul>
+      </li>
+    );
+  });
+
   return (
     <section id="update" className="py-20">
       <div className="px-8 mx-auto max-w-4xl lg:px-16">
         <H2>Update</H2>
         <div className="grid grid-cols-1 gap-0 text-gray-700 md:gap-16">
           <ul className="mt-10">
-            <li className="mb-4">
+            {UpdateComponent}
+            {/* <li className="mb-4">
               <span className="font-bold">Version </span>
               <span className="font-bold num">1.3.0</span>
               <span className="ml-20 num">2021/8/22</span>
@@ -75,7 +107,7 @@ const Faq: React.FC = () => {
               <ul className="mt-2">
                 <li className="list-disc ml-6 mb-2">リリース</li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
@@ -83,4 +115,4 @@ const Faq: React.FC = () => {
   );
 };
 
-export default Faq;
+export default Update;

@@ -37,11 +37,11 @@ const Header: React.FC = () => {
               <div className="flex-col w-full h-auto overflow-hidden justify-center rounded bg-indigo-300 bg-opacity-25 md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
                 <div
                   className={
-                    "flex flex-col items-start justify-center w-full space-x-6 text-center md:w-2/3 md:mt-0 md:flex-row md:items-center"
+                    "flex flex-col items-start justify-center w-full text-center md:space-x-6 md:w-2/3 md:mt-0 md:flex-row md:items-center"
                   }
                 >
                   <Link
-                    className="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center cursor-pointer"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-indigo-600 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="header"
                     offset={-40}
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
                     Home
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-gray-700 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="android"
                     spy={true}
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                     Android
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-gray-700 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="ios"
                     spy={true}
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                     iOS
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-gray-700 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="update"
                     spy={true}
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                     Update
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-gray-700 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="member"
                     spy={true}
@@ -92,7 +92,7 @@ const Header: React.FC = () => {
                     Member
                   </Link>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-gray-700 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="faq"
                     spy={true}
@@ -103,12 +103,12 @@ const Header: React.FC = () => {
                   </Link>
                   <a
                     href="https://flutter-univ-music-app.web.app/"
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-gray-700 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 hover:text-indigo-600 lg:mx-3 md:text-center"
                   >
                     Privacy
                   </a>
                   <Link
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 text-2xl md:text-xl md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
+                    className="inline-block w-full py-2 mx-0 pl-6 font-medium text-left text-gray-700 text-2xl md:text-xl md:ml-0 md:w-auto md:px-0 hover:text-indigo-600 lg:mx-3 md:text-center cursor-pointer"
                     activeClass="active"
                     to="contact"
                     spy={true}

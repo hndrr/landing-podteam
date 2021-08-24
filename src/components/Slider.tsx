@@ -1,10 +1,10 @@
 import React from "react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
 import AppImage from "./AppImage";
 import { useMediaQuery } from "react-responsive";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 type Props = {
   imageList: { name: string; src: string }[];
@@ -37,6 +37,8 @@ const Slider: React.FC<Props> = ({ imageList }) => {
       slidesOffsetBefore={isXl ? 0 : isSm ? 48 : 16}
       slidesOffsetAfter={isXl ? 0 : isSm ? 48 : 16}
       slidesPerView={isLg && imageList.length > 4 ? 4.5 : isLg ? 4 : 2.5}
+      autoplay={{ delay: 1000 }}
+      // pagination={{ clickable: false }}
       // onSlideChange={() => console.log("slide change")}
       // onSwiper={(swiper) => console.log(swiper)}
     >

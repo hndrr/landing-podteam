@@ -14,7 +14,7 @@ type Props = {
 
 const Hero: React.FC<Props> = ({ hero }) => {
   const HeroImgIcon = hero.imgs.map((img: HeroImgIcon) => (
-    <a href={img.href} className="flex items-center px-6 py-3 mb-3 rounded-md">
+    <a href={img.href} className="flex items-center mx-6 my-3 mb-3 rounded-md">
       <img src={img.src.url} className="h-12 bounce-top-icons" alt={img.alt} />
     </a>
   ));

@@ -50,7 +50,7 @@ const Faq: React.FC = () => {
               <span className="ml-20 num">2021/5/5</span>
               <ul className="mt-2">
                 <li className="list-disc ml-6 mb-2">
-                  ドロワー、 問い合わせフォーム追加
+                  ドロワー、問い合わせフォーム追加
                 </li>
                 <li className="list-disc ml-6 mb-2">
                   ポッドキャスト登録のUI改善

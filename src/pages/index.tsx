@@ -31,7 +31,6 @@ const HomePage = ({ hero, authors, faqs, contact, updates }) => {
       <Hero hero={hero} />
       <AppImages />
       <Update updates={updates} />
-      {JSON.stringify(updates)}
       <Authors authors={authors} />
       <Faq faqs={faqs} contact={contact} />
       <Footer contact={contact} />

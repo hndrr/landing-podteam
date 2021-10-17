@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <nav className="relative z-50 h-16 select-none">
           <div
             className={
-              "container relative flex flex-wrap items-center justify-between h-24 font-medium lg:justify-center sm:px-4 md:px-2" +
+              "container fixed flex flex-wrap items-center justify-between h-24 font-medium lg:justify-center sm:px-4 md:px-2" +
               (navbarOpen ? "" : " overflow-hidden") +
               "md:overflow-visible"
             }

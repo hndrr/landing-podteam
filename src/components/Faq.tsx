@@ -39,7 +39,7 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
           {faq.question}
         </h3>
         <p>
-          {index === 7 && (
+          {index === faq.length - 1 && (
             <a
               href={contact.href}
               className="text-indigo-600 font-bold underline"
@@ -59,10 +59,10 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
         <H2>Frequently Asked Questions</H2>
         <div className="grid grid-cols-1 gap-0 text-gray-700 md:grid-cols-2 md:gap-16">
           <div>
-            {faqs.map((faq, index) => index < 4 && FaqList(faq, index))}
+            {faqs.map((faq, index) => index < 3 && FaqList(faq, index))}
           </div>
           <div>
-            {faqs.map((faq, index) => index >= 4 && FaqList(faq, index))}
+            {faqs.map((faq, index) => index >= 3 && FaqList(faq, index))}
           </div>
         </div>
       </div>

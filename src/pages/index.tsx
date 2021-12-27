@@ -32,7 +32,7 @@ const HomePage = ({ hero, authors, faqs, contact, updates }) => {
       <AppImages />
       <Update updates={updates} />
       <Authors authors={authors} />
-      <Faq faqs={faqs} contact={contact} />
+      <Faq faqs={faqs} />
       <Footer contact={contact} />
     </>
   );

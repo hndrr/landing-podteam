@@ -9,10 +9,9 @@ interface Faq {
 }
 interface Faqs {
   faqs: Faq[];
-  contact: { text: string; href: string };
 }
 
-const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
+const Faq: React.FC<Faqs> = ({ faqs }) => {
   const FaqList = (faq: Faq, index: number) => {
     const channel = "#共同開発_music";
     const faqAnswer = (faq.answer || "")
@@ -38,17 +37,7 @@ const Faq: React.FC<Faqs> = ({ faqs, contact }) => {
         <h3 className="mt-10 mb-3 font-semibold text-gray-900">
           {faq.question}
         </h3>
-        <p>
-          {index === faq.length - 1 && (
-            <a
-              href={contact.href}
-              className="text-indigo-600 font-bold underline"
-            >
-              {contact.text}
-            </a>
-          )}
-          {faqAnswer}
-        </p>
+        <p>{faqAnswer}</p>
       </>
     );
   };

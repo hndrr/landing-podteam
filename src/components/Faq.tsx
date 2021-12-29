@@ -33,12 +33,12 @@ const Faq: React.FC<Faqs> = ({ faqs }) => {
       });
 
     return (
-      <>
+      <Fragment key={"faqAnswerindex"}>
         <h3 className="mt-10 mb-3 font-semibold text-gray-900">
           {faq.question}
         </h3>
         <p>{faqAnswer}</p>
-      </>
+      </Fragment>
     );
   };
 

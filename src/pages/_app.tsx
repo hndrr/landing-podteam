@@ -1,3 +1,4 @@
+import React from "react";
 import { GlobalStyles } from "twin.macro";
 import "../../styles/globals.scss";
 import "./styles.scss";

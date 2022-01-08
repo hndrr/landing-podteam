@@ -3,6 +3,8 @@ import dayjs from "dayjs";
 import H2 from "./H2";
 
 interface UpdateList {
+  text: string;
+  href: string;
   update_list: string;
 }
 
@@ -19,10 +21,15 @@ interface Updates {
 const Update: React.FC<Updates> = ({ updates }) => {
   const UpdateComponent = updates.map((update, index) => {
     const UpdateListComponent: JSX.Element[] = update.list.map(
-      (update_list, index) => {
+      (list, index) => {
         return (
           <li key={"update_list$index"} className="list-disc ml-6 mb-2">
-            {update_list.update_list}
+            {list.text && (
+              <a className="text-indigo-600" href={list.href}>
+                {list.text}
+              </a>
+            )}
+            {list.update_list}
           </li>
         );
       }

@@ -5,6 +5,8 @@ import H2 from "./H2";
 interface UpdateList {
   text: string;
   href: string;
+  forwardtext: string;
+  aftertext: string;
   update_list: string;
 }
 
@@ -24,11 +26,13 @@ const Update: React.FC<Updates> = ({ updates }) => {
       (list, index) => {
         return (
           <li key={"update_list$index"} className="list-disc ml-6 mb-2">
-            {list.text && (
+            {list.forwardtext}
+            {list.href && (
               <a className="text-indigo-600" href={list.href}>
                 {list.text}
               </a>
             )}
+            {list.aftertext}
             {list.update_list}
           </li>
         );
